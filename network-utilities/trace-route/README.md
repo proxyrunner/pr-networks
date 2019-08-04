@@ -1,15 +1,15 @@
 # Traceroute Topics
 
 ## Topics to Discuss:
-*How traceroute works
-*Interpreting DNS in traceroute
-*Understanding network latency ICMP prioritization and rate-limiting
-*ICMP prioritization and rate-limiting
-*Asymmetric forwarding paths 
-*Load balancing across multiple paths
-*Traceroute and MPLS
-*Random Traceroute Factoid
-    *The default starting destination probe port in the UNIX traceroute implementation is 33434. This comes from 32768 (215) + 666 (the mark of Satan). Coincidence?
+* How traceroute works
+* Interpreting DNS in traceroute
+* Understanding network latency ICMP prioritization and rate-limiting
+* ICMP prioritization and rate-limiting
+* Asymmetric forwarding paths 
+* Load balancing across multiple paths
+* Traceroute and MPLS
+* Random Traceroute Factoid
+    * The default starting destination probe port in the UNIX traceroute implementation is 33434. This comes from 32768 (215) + 666 (the mark of Satan). Coincidence?
 		
 		
 ## How Traceroute Works
