@@ -5,6 +5,9 @@
 ## :pencil2: Cisco Exams
 * CCNA
 * CCNP
+     * Route
+     * Switch
+     * Troubleshoot
 * CCIE
 
 ## :file_folder: Network Utilities
