@@ -9,8 +9,7 @@
 | Shorter distances | Longer distances |
 | Less expensive | More expensive |
 
-| Standard | Cable | Connector | Wavelength
-	 | Core Size | Distance |
+| Standard | Cable | Connector | Wavelength | Core Size | Distance |
 |---|---|---|---|---|---|
 | 10GBASE-SR | MMF | Dual SC | 850 | 50/62.5 | Up to 400 m |
 | 10GBASE-LR | SMF | Dual LC/PC | 1310 | G.652 | 10 km |
