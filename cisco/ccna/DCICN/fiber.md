@@ -2,5 +2,9 @@
 
 ## MMF and SMF Characteristics
 
-MMF Characteristics| SMF Characteristics
-LED| Laser
+| MMF Characteristics |  SMF Characteristics |
+|---|---|
+| LED|LASER  |
+|  |  |
+|  |  |
+|  |  |
