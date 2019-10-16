@@ -25,3 +25,7 @@
 ## Single Mode Fiber for Birdirectional applications
 
 ![Fiber cabling for SMF](https://github.com/gil-ryan/grs-networking-public/blob/master/cisco/ccna/DCICN/img/423cdb2c1a298cebf21ac1c601325785.png)
+
+## Challenges in Shared LANs
+
+CSMA/CD; I'll be skipping and returning some of the ethernet aspects in order to engage actual DC content.
