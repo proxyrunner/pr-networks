@@ -11,3 +11,13 @@ Check it out, __ncclient__.
 [ncclient](https://github.com/ncclient/ncclient)
 
 > pip install ncclient
+
+```
+Installing collected packages: lxml, ncclient
+     Running setup.py install for ncclient ... done
+Successfully installed lxml-4.4.1 ncclient-0.6.6
+```
+
+### Remote Procedure Call (RPC layer)
+
+See NCClient to review RPCs role in Python Network Automation: NCClient requires the developer to write the raw XML of the NETCONF message, and then takes care of the RPC layer and establishing the communications channel to the network device.
