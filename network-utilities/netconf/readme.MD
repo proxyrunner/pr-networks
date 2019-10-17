@@ -9,3 +9,5 @@ The Network Configuration Protocol is a network management protocol developed an
 Check it out, __ncclient__.
 
 [ncclient](https://github.com/ncclient/ncclient)
+
+> pip install ncclient
