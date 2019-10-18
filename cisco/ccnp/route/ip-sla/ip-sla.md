@@ -1,5 +1,7 @@
 # IP Service Level Agreements (SLA)
 
+Please note that this training and information is pertinent to Cisco(C) CCNP studies. Furthermore, IP SLA is a much more intricate and developed technology than the scope of this guide.
+
 ## Configuring IP SLA
 
 Be be aware that version support varies by IOS.
