@@ -32,6 +32,6 @@ They can consist of the following:
 * ^ = Start of string
 * $ = End of String
 * . = Any single character
-* "*" = zero or more instance
-* + = One or more instances
+* \* = zero or more instance
+* \+ = One or more instances
 * ? = Zero or one instances
