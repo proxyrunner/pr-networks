@@ -19,6 +19,12 @@ Defines an external neighbor:
 
 > (config-router)# neighbor _ip\_address_ remote-as _as-number_
 
-> (config-router)# neighbor _ip_address_ description _neighbor description_
+Assigns a description to an external neighbor:
+
+> (config-router)# neighbor _ip\_address_ description _neighbor description_
+
+Disables a BGP Neighbor:
+
+> (config-router)# neighbor _ip\_address_ shutdown
 
 ## Configuring Internal Neighbors
