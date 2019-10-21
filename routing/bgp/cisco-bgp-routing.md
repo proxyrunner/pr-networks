@@ -59,3 +59,13 @@ __Next-hop__: The router also modifies the next-hop attribute as the route passe
 * Atomic aggregate
 
      + Informs the neighbor AS that the originating router aggregated routes
+
+__All__ BGP implementations must support discretionary well-known attributes. However, discretionary well-known attributes do not have to be present in all BGP updates. Routers use discretionary well-known attributes only when those functions are required.
+
+The following are discriptons of these two attributes:
+
+* __Local preference__: Local preference is used in the route selection process. This attribute is carried within an AS only. The router prefers a route with a high local preference value to a route with a low value.
+
+By default, routes that are received from a peer AS are tagged with the local preference set to a value of 100 before that are entered into the local AS. If this value is changed through BGP configuration, the BGP selection process is influenced. Because all routers within the AS get the attribute along with the route, a consistent routing decision is made throughout the AS.
+
+* __Atomic aggregate__: The atomic aggregate attribute is attached to a route that is created as a result of route summarization (called aggregation in BGP). This attribute signals that information that was present in the original routing updates may have been lost when the updates were summarized into a single entry.
