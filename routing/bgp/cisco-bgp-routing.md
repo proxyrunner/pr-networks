@@ -27,6 +27,7 @@ Three specific well-known attributes are required to be present on every update.
 These are referred to as mandatory well-known attributes. Other well-known attributes may or may not be present, depending on the circumstances under which the updates are sent and the desired routing policy. The well-known attributes that could be present, but are not required, are called __discretionary__ well-known attributes.
 
 * Origin
+
 | &nbsp;| &nbsp;|
 |:---:|:---:|
-| i | Route originated in an IGP | 
+| i | Route originated in an IGP |
