@@ -28,6 +28,5 @@ These are referred to as mandatory well-known attributes. Other well-known attri
 
 * Origin
 
-| &nbsp;| &nbsp;|
 |:---:|:---:|
 | i | Route originated in an IGP |
