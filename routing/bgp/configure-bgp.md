@@ -27,4 +27,4 @@ Disables a BGP Neighbor:
 
 > (config-router)# neighbor _ip\_address_ shutdown
 
-## Configuring Internal Neighbors
+## Configure Basic BGP
