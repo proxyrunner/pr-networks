@@ -32,3 +32,8 @@ Other attributes, called __nontransitive optional attributes__, might be of no v
      + Used for route tagging
 
 One of the nontransitive attributes is the MED attribute, which also influences the BGP route selection process. Whenever there are several links between two adjacent autonomous systems, on AS can use the MED attribute to tell another AS to prefer one of the links for specific destinations.
+
+### Tansitive Optional Attributes
+
+* __Aggregator__: This attribute identifies the AS and the router within that AS that created a route summarization, or aggregate.
+* __Community__: This attribute is a numerical value that can be attached to certain routes as they pass a specific point in the network. For filtering or route selection purposes, other routers can examine the commnuity value at different points in the network. BGP configuration may cause routes with a specific community value to be treated differently than others.
