@@ -28,5 +28,7 @@ These are referred to as mandatory well-known attributes. Other well-known attri
 
 * Origin
 
+| &nbsp;e&nbsp;|&nbsp; Route originated in EGP &nbsp;|
 |:---:|:---:|
 | i | Route originated in an IGP |
+| ? | Route was redistributed into BGP|
