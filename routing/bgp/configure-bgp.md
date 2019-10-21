@@ -28,3 +28,5 @@ Disables a BGP Neighbor:
 > (config-router)# neighbor _ip\_address_ shutdown
 
 ## Configure Basic BGP
+
+![AS-BUILT1](https://github.com/gil-ryan/grs-networking-public/blob/master/img/as-built1.png)
