@@ -62,7 +62,7 @@ __Next-hop__: The router also modifies the next-hop attribute as the route passe
 
 __All__ BGP implementations must support discretionary well-known attributes. However, discretionary well-known attributes do not have to be present in all BGP updates. Routers use discretionary well-known attributes only when those functions are required.
 
-The following are discriptons of these two attributes:
+The following are descriptions of these two attributes:
 
 * __Local preference__: Local preference is used in the route selection process. This attribute is carried within an AS only. The router prefers a route with a high local preference value to a route with a low value.
 
