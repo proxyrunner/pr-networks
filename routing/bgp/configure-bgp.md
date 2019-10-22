@@ -66,8 +66,39 @@ Neighbor        V           AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State
 ```
 BGP neighbor is 172.16.12.11,  remote AS 100, external link
   BGP version 4, remote router ID 10.0.1.1
-  BGP state = __Established__, up for 00:00:33
+  BGP state = Established, up for 00:00:33
   Last read 00:00:33, last write 00:00:33, hold time is 180, keepalive interval is 60 seconds
   Neighbor sessions:
     1 active, is not multisession capable (disabled)
 ```
+
+#### Some example output when disabling a neighbor
+
+```
+R2(config-router)#neighbor 172.16.22.22 shutdown                       
+*Oct 22 17:09:06.719: %BGP-5-ADJCHANGE: neighbor 172.16.22.22 Down Admin. shutdown
+*Oct 22 17:09:06.719: %BGP_SESSION-5-ADJCHANGE: neighbor 172.16.22.22 IPv4 Unicast topology base removed from session  Admin. shutdown
+R2(config-router)#no neighbor 172.16.22.22 shutdown
+*Oct 22 17:10:21.211: %BGP-5-ADJCHANGE: neighbor 172.16.22.22 Up 
+R2(config-router)#
+```
+
+## Configuring BGP Timers
+
+Changing default holtime and keepalive timers are typically not recommended. The defaults are:
+
+* keepalive: 60 seconds
+* holdtime: 180 seconds
+
+These will work in most scenarios. If for any reason a faster BGP response to a peer down event is needed, the neihbor timers on the router can be reduced. Such as a scenario with multiple paths towards destinations are available.  The reduction will result ina faster detection of a lost peer and faster switching to the alternate path in the BGP table, improving convergence.
+
+> router(config-router)# timers bgp keepalive holdtime
+
+* Changes default values per BGP process
+* Only holdtime value is communicated in BGP open message
+* peers use the smallest configured holdtime value
+
+> router(config-router)# neighbor ip-address timers keepalive holdtime
+
+* changes default BGP timers per a specific neighbor
+* overrides the BGP settings of timers
