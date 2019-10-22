@@ -47,7 +47,9 @@ Next we configure ISP_1
 
 When the BGP session is finally established, you will see this output:
 
-> *Oct 22 14:45:03.583: %BGP-5-ADJCHANGE: neighbor 172.16.12.2 Up 
+```
+*Oct 22 14:45:03.583: %BGP-5-ADJCHANGE: neighbor 172.16.12.2 Up 
+```
 
 ### Verification
 
@@ -85,12 +87,12 @@ R2(config-router)#
 
 ## Configuring BGP Timers
 
-Changing default holtime and keepalive timers are typically not recommended. The defaults are:
+Changing default holdtime and keepalive timers are typically not recommended. The defaults are:
 
 * keepalive: 60 seconds
 * holdtime: 180 seconds
 
-These will work in most scenarios. If for any reason a faster BGP response to a peer down event is needed, the neihbor timers on the router can be reduced. Such as a scenario with multiple paths towards destinations are available.  The reduction will result ina faster detection of a lost peer and faster switching to the alternate path in the BGP table, improving convergence.
+These will work in most scenarios. If for any reason a faster BGP response to a peer down event is needed, the neighbor timers on the router can be reduced. Such as a scenario with multiple paths towards destinations are available.  The reduction will result ina faster detection of a lost peer and faster switching to the alternate path in the BGP table, improving convergence.
 
 > router(config-router)# timers bgp keepalive holdtime
 
@@ -102,3 +104,44 @@ These will work in most scenarios. If for any reason a faster BGP response to a 
 
 * changes default BGP timers per a specific neighbor
 * overrides the BGP settings of timers
+
+In this example we will configure R2's holdtime and keepalive where connected to ISP1
+
+> R2(config-router)#neighbor 172.16.12.1 timers 10 30
+
+> ISP_1(config-router)#timers bgp 10 30
+
+#### Clear BGP Tables
+
+```
+ISP_1#clear ip bgp *
+*Oct 22 17:28:00.571: %BGP-5-ADJCHANGE: neighbor 172.16.12.2 Down User reset
+*Oct 22 17:28:00.571: %BGP_SESSION-5-ADJCHANGE: neighbor 172.16.12.2 IPv4 Unicast topology base removed from session  User reset
+*Oct 22 17:28:01.499: %BGP-5-ADJCHANGE: neighbor 172.16.12.2 Up 
+```
+
+### Verification
+```
+R2#show ip bgp neighbors 
+BGP neighbor is 172.16.12.1,  remote AS 100, external link
+ Description: CONNECTION-TO-ISP-1
+  BGP version 4, remote router ID 10.0.1.1
+  BGP state = Established, up for 00:02:20
+  Last read 00:00:03, last write 00:00:04, hold time is 30, keepalive interval is 10 seconds
+  Configured hold time is 30, keepalive interval is 10 seconds
+```
+
+## MD5 Authentication
+
+We will now configure MD5 authentication on a TCP connection. Here is the template configuration:
+
+> router(config-router)# neighbor ip-address password string
+
+* Enables MD5 authetication on a specific BGP session
+* Password string on both routers must match
+
+If they __do not__ match, you will receive the following output:
+
+```
+*Oct 22 17:37:43.987: %TCP-6-BADAUTH: Invalid MD5 digest from 172.16.12.2(39656) to 172.16.12.1(179) tableid - 0
+```
