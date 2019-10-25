@@ -21,7 +21,9 @@ command is used. If the VRF name is not specified, the default behavior of the C
 The mgmt 0 interface permanently resides in the management VRF.
 
 > N5K-1# conf
+
 > N5K-1(config)# interface mgmt 0
+
 > N5K-1(config-if)# ip address 10.10.10.1/24
 
 > N5K-1(config)# show ip interface brief vrf management
