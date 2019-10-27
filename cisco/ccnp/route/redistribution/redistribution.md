@@ -15,7 +15,6 @@ There will come a time when you face a mix of problems involving routing, typica
 * Political boundaries (groups that don't work well together)
 * Mismatch between devices (mixed vendor environment)
 
-
 ### Defining Route Restribution
 
 Routes that are learned by other means are selectively redistributed into a routing protocol from one of three sources:
