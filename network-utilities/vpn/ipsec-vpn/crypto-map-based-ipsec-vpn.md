@@ -1,9 +1,10 @@
 # Crypto Map Based IPsec VPNs
 
-IPsec Data Plane (SPI)
-!(https://github.com/gil-ryan/grs-networking-public/blob/master/network-utilities/vpn/ipsec-vpn/spi.PNG)[SPI]
-
 ## ISAKMP & IKE Overview
+
+### IPsec Data Plane (SPI)
+
+!(https://github.com/gil-ryan/grs-networking-public/blob/master/network-utilities/vpn/ipsec-vpn/spi.PNG)[SPI]
 
 ## IKE Phase I
 
