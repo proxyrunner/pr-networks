@@ -40,3 +40,20 @@
 ## VPN Models
 * Peer to peer model
     + Requires service provider involvement, tunneling or routing methods.
+    + Value add of service provider
+    + Simple for customer to deploy (SP administered)
+* Overlay model
+    + Service provider agnostic; does not require support of the SP.
+    + Typically agnostic of the underlay
+    + Requires customer to configure and support
+
+### VPN Model Examples
+
+* Peer to peer model examples:
+    + MPLS VPN, L2 VPN
+    + Service provider (QinQ) Tunneling
+    + Leased or packet switched technologies\*
+* Overlay model examples:
+    + GRE Tunnel (plain text or secured)
+    + VTI's
+    + DMVPN
