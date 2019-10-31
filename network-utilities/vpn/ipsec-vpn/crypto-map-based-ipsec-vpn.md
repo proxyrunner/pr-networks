@@ -4,7 +4,7 @@
 
 ### IPsec Data Plane (SPI)
 
-!(https://github.com/gil-ryan/grs-networking-public/blob/master/network-utilities/vpn/ipsec-vpn/spi.PNG)[SPI]
+![SPI](https://github.com/gil-ryan/grs-networking-public/blob/master/network-utilities/vpn/ipsec-vpn/spi.PNG)
 
 ## IKE Phase I
 
