@@ -1,5 +1,7 @@
 # Site to Site VPN Configuration Sample w/Crypto Map
 
+Some samples and best practices
+
 ## Crypto Map Based VPN Caveats
 
 * Crypto map based VPNs do not support routing protocols unless additiona (nested) encapsulation is used. Example:GRE
