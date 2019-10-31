@@ -31,3 +31,10 @@
     - [x] >2048 is best practice for non-ECC groups
     - [x] AES and SHA256
     - [x] Always avoid the following: DH groups 1/2/6, DES, 3DES, RC4, MD5, and SHA1.\*
+
+## Encrypting Pre-Shared Keys
+
+* By default pre-shared keys are in plain text format in NVRAM
+* If a router is compromised this means the VPN is compromised.
+* Using encryption causes IOS to store the pre-shared key as a type 6 encrypted form
+* While the encrypted format is still readable, it is generally computations difficult (non-trivial) to decrypt
