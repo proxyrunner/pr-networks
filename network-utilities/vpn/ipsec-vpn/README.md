@@ -57,3 +57,24 @@
     + GRE Tunnel (plain text or secured)
     + VTI's
     + DMVPN
+
+## IPsec Benefits
+
+* IPsec is an overlay VPNs type
+* Relatively easy to deploy
+* Can provide the following:
+    1. Authentication\*
+    2. Data Integrity\*
+    3. Confidentiality \*
+    4. Anti-reply\*
+
+## IPsec suite
+
+* IPsec is a layer 3 protocol
+* Implicitly IPsec protects any upper layer payload
+* IPsec is actually a suite of protocols & methods that provide the aforementioned functionality:
+    + Encapsulation Security Protocol (ESP), Authentication Header (AH)
+    + Diffie-Hellman (DH)
+    + Internet Security Association and Key Management Protocol (ISAKMP) which is implemented as Internet Key Exchange (IKE).
+    + Various hashing & cipher suites: AES, SHA, 3DES, etc.
+
