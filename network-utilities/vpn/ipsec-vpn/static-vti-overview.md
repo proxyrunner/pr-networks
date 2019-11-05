@@ -1,4 +1,4 @@
-# Statis VTI Overview
+# Static VTI Overview
 
 ## Virtual Tunneled Interfaces
 
