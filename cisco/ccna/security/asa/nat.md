@@ -41,3 +41,53 @@ Cisco's NAT terms:
     *Translations in the manual NAT section are used only when a connection fails to match any entries in the first two sections.
 
 __\* If no translation is found in the NAT table, the packet is forwarded without a translation, according to any applied access rules.__
+
+
+
+## Examples of NAT Verification
+
+```
+# show xlate
+3 in use, 3 most used
+Flags: D - DNS, e - extended, I - identity, i - dynamic, r - portmap,
+       s - static, T - twice, N - net-to-net
+NAT from dmz:172.16.1.50 to outside:192.168.1.100
+    flags s idle 15:34:04 timeout 0:00:00
+
+NAT from inside:10.1.1.50 to outside:192.168.2.144 flags i idle 0:02:51 timeout 3:00:00
+NAT from inside:10.1.1.10 to outside:192.168.2.177 flags i idle 0:05:22 timeout 3:00:00
+TCP PAT from inside:10.1.1.50/59782 to outside:192.168.1.1/59782 flags ri idle 0:00:54 timeout 0:00:30
+TCP PAT from inside:10.1.1.10/1116 to outside:192.168.1.1/1116 flags ri idle 0:01:17 timeout 0:00:30
+```
+
+```
+# show nat
+Manual NAT Policies (Section 1)
+1 (dmz) to (Partner_Network) source dynamic DMZ_Network 172.18.1.11_PAT destination static 172.16.1.0_network 172.17.1.0_network
+    translate_hits = 4, untranslate_hits = 19
+
+Auto NAT Policies (Section 2)
+1 (dmz) to (outside) source static DMZ-Server 192.168.1.11
+    translate_hits = 12956, untranslate_hits = 2523
+2 (inside) to (outside) source dynamic 10.0.1.0_network interface
+    translate_hits = 1204, untranslate_hits = 3061
+
+Manual NAT Policies (Section 3)
+1 (any) to (outside) source dynamic 10.0.0.0_Private 192.168.1.8_outside
+    translate_hits = 4728, untranslate_hits = 92837
+```
+
+## Basic Configurations
+
+```
+Interface GigabitEthernet0/2
+    no shutdown
+    nameif dmz
+    security-level 50
+    ip address 172.16.1.1 255.255.255.0
+Interface GigabitEthernet0/3
+    no shutdown
+    nameif outside
+    security-level 0
+    ip address 192.168.1.1 255.255.255.0
+```
