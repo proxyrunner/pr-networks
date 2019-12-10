@@ -1,4 +1,4 @@
-# Policy Based Routing (PBR)
+# Policy Based Routing (PBR) :world_map:
 
 * Enable you to implement policies that selectively cause packets to take different paths:
    +  IP routing is destination-based.
@@ -44,7 +44,7 @@ You can use requirements from the previous figure to create the implementation p
 
 ### Example Configuration
 
-1. Create ACL
+1. Create ACL :hammer_and_wrench:
 
 ```
 BR1# configure terminal
@@ -52,7 +52,7 @@ BR1(config)# ip access-list extended PBR-ACL
 BR1(config-ext-nacl)# permit ip host 192.168.110.10 any
 ```
 
-2. Create Route Map
+2. Create Route Map :hammer_and_wrench:
 
 ```
 BR1(config)# route-map PBR-RP
