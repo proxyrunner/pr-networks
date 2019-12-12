@@ -84,3 +84,79 @@ R6(config)#ip sla schedule 1 start-time now life ?
   <0-2147483647>  Life seconds (default 3600)
   forever         continue running forever
 ```
+
+```
+R6#show ip sla ?
+  application             IP SLAs Application
+  authentication          IP SLAs Authentication Information
+  auto                    IP SLAs Auto Show Commands
+  configuration           IP SLAs Configuration
+  endpoint-list           IP SLAs Endpoint list configuration
+  enhanced-history        IP SLAs Enhanced History
+  ethernet-monitor        IP SLAs Auto Ethernet Monitor
+  event-publisher         IP SLAs Event Publisher
+  group                   IP SLAs Group Scheduling/Configuration
+  history                 IP SLAs History
+  mpls-lsp-monitor        IP SLAs MPLS LSP Monitor
+  reaction-configuration  IP SLAs Reaction Configuration
+  reaction-trigger        IP SLAs Reaction Trigger
+  responder               IP SLAs Responder Information
+  statistics              IP SLAs Statistics
+  summary                 IP SLAs Statistics Summary
+  twamp                   IP SLAs TWAMP
+```
+
+```
+R6(config-track)#?
+Tracking instance configuration commands:
+  default        Set a command to its defaults
+  default-state  Default object state
+  delay          Tracking delay
+  exit           Exit from tracking configuration mode
+  no             Negate a command or set its defaults
+```
+
+```
+R6#show ip sla configuration
+IP SLAs Infrastructure Engine-III
+Entry number: 1
+Owner: 
+Tag: 
+Operation timeout (milliseconds): 5000
+Type of operation to perform: icmp-echo
+Target address/Source interface: 7.7.7.7/GigabitEthernet0/0
+Type Of Service parameter: 0x0
+Request size (ARR data portion): 28
+Verify data: No
+Vrf Name: 
+Schedule:
+   Operation frequency (seconds): 5  (not considered if randomly scheduled)
+   Next Scheduled Start Time: Start Time already passed
+   Group Scheduled : FALSE
+   Randomly Scheduled : FALSE
+   Life (seconds): Forever
+   Entry Ageout (seconds): never
+   Recurring (Starting Everyday): FALSE
+   Status of entry (SNMP RowStatus): Active
+Threshold (milliseconds): 5000
+Distribution Statistics:
+   Number of statistic hours kept: 2
+   Number of statistic distribution buckets kept: 1
+   Statistic distribution interval (milliseconds): 20
+Enhanced History:
+History Statistics:
+   Number of history Lives kept: 0
+   Number of history Buckets kept: 15
+   History Filter Type: None
+```
+
+```
+R6#show track
+Track 1
+  IP SLA 1 reachability
+  Reachability is Up
+    1 change, last change 00:00:40
+  Latest operation return code: OK
+  Latest RTT (millisecs) 16
+R6#
+```
