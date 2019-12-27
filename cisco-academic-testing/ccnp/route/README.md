@@ -1,4 +1,4 @@
-# Welcome to my CCNP Route Study Guide
+# Welcome to my CCNP Route Study Guide & Checklist
 
 This is going to take some time and become challenging. However - just follow my lead ;). 
 
