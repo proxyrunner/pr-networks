@@ -4,6 +4,15 @@ This is going to take some time and become challenging. However - just follow my
 
 __The 300-101 exam will be retired on February 23, 2020.__
 
+## Grading
+
+1.0 Network Principles - 10%
+2.0 Layer 2 Technologies - 10%
+3.0 Layer 3 Technologies - 40%
+4.0 VPN Technologies - 10%
+5.0 Infrastructure Security - 10%
+6.0 Infrastructure Services - 20%
+
 Here is the URL: [Cisco CCNP ROUTE](https://learningnetwork.cisco.com/community/certifications/ccnp/route_v2/exam-topics)
 
 ## 1.0 Network Principles - 10%
@@ -36,7 +45,7 @@ Here is the URL: [Cisco CCNP ROUTE](https://learningnetwork.cisco.com/community/
 + - [ ] 1.6.b Migrate parts of the network to IPv6
 + - [ ] 1.6.c Routing protocol migration
 
-## 2.0 Layer 2 Technologies
+## 2.0 Layer 2 Technologies - 10%
 
 - [ ] 2.1 Troubleshoot switch administration
 + - [ ] 2.1.a SDM templates
@@ -69,7 +78,7 @@ Here is the URL: [Cisco CCNP ROUTE](https://learningnetwork.cisco.com/community/
 - [ ] 2.8 Troubleshoot chassis virtualization and aggregation technologies
 + - [ ] 2.8.a Stackwise
 
-## 3.0 Layer 3 Technologies	
+## 3.0 Layer 3 Technologies	- 40%
 
 - [ ] 3.1 Troubleshoot IPv4 addressing and subnetting
 + - [ ] 3.1.a Address types (Unicast, broadcast, multicast, and VLSM)
@@ -108,7 +117,6 @@ Here is the URL: [Cisco CCNP ROUTE](https://learningnetwork.cisco.com/community/
 + - [ ] 3.19.a Equal cost
 + - [ ] 3.19.b Unequal cost
 - [ ] 3.20 Troubleshoot EIGRP metrics
-
 - [ ] 3.21 Troubleshoot EIGRP for IPv6
 - [ ] 3.22 Troubleshoot OSPF neighbor relationship and authentication
 - [ ] 3.23 Troubleshoot network types, area types, and router types
@@ -128,14 +136,14 @@ Here is the URL: [Cisco CCNP ROUTE](https://learningnetwork.cisco.com/community/
 + - [ ] 3.28.b 4-byte AS number
 + - [ ] 3.28.c Private AS
 
-## 4.0 VPN Technologies - 5%
+## 4.0 VPN Technologies - 10%
 
 - [ ] 4.1 Troubleshoot GRE
 - [ ] 4.1 Configure and verify GRE
 - [ ] 4.2 Describe DMVPN (single hub)
 - [ ] 4.3 Describe Easy Virtual Networking (EVN)
 
-## 5.0 Infrastructure Security	- [ ] 5%
+## 5.0 Infrastructure Security	- 10%
 
 - [ ] 5.1 Troubleshoot IOS AAA using local database
 - [ ] 5.2 Troubleshoot device access control
@@ -147,7 +155,7 @@ Here is the URL: [Cisco CCNP ROUTE](https://learningnetwork.cisco.com/community/
 + - [ ] 5.3.b IPv6 traffic filter
 + - [ ] 5.3.c Unicast reverse path forwarding
 
-## 6.0 Infrastructure Services - 5%
+## 6.0 Infrastructure Services - 20%
 
 - [ ] 6.1 Troubleshoot device management
 + - [ ] 6.1.a Console and VTY
