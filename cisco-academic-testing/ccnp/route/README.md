@@ -8,6 +8,8 @@ Here is the URL: [Cisco CCNP ROUTE](https://learningnetwork.cisco.com/community/
 
 ## 1.0 Network Principles - 10%
 
+[Network Principles](https://github.com/gil-ryan/grs-networking-public/tree/master/cisco-academic-testing/ccnp/route/Network%20Principles)
+
 - 1.1 Identify Cisco Express Forwarding concepts
     + 1.1.a FIB
     + 1.1.b Adjacency table
