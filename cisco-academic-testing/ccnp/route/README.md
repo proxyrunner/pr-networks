@@ -6,14 +6,19 @@ __The 300-101 exam will be retired on February 23, 2020.__
 
 ## Grading
 
-* 1.0 Network Principles - 10%
-* 2.0 Layer 2 Technologies - 10%
-* 3.0 Layer 3 Technologies - 40%
-* 4.0 VPN Technologies - 10%
-* 5.0 Infrastructure Security - 10%
-* 6.0 Infrastructure Services - 20%
+1.0 Network Principles - 10%
 
-Here is the URL: [Cisco CCNP ROUTE](https://learningnetwork.cisco.com/community/certifications/ccnp/route_v2/exam-topics)
+2.0 Layer 2 Technologies - 10%
+
+3.0 Layer 3 Technologies - 40%
+
+4.0 VPN Technologies - 10%
+
+5.0 Infrastructure Security - 10%
+
+6.0 Infrastructure Services - 20%
+
+Here is the URL to Cisco issues exam topics: [Cisco CCNP ROUTE](https://learningnetwork.cisco.com/community/certifications/ccnp/route_v2/exam-topics)
 
 ## 1.0 Network Principles - 10%
 
