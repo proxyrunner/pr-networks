@@ -115,7 +115,7 @@ Here is the URL to Cisco issues exam topics: [Cisco CCNP ROUTE](https://learning
 - [ ] 3.15 Troubleshoot EIGRP neighbor relationship and authentication
 - [ ] 3.16 Troubleshoot loop free path selection
 + - [ ] 3.16.a RD, FD, FC, successor, feasible successor
-- [ ] 3.17 Troubleshoot EIGPR operations
+- [ ] 3.17 Troubleshoot EIGRP operations
 + - [ ] 3.17.a Stuck in active
 - [ ] 3.18 Troubleshoot EIGRP stubs
 - [ ] 3.19 Troubleshoot EIGRP load balancing
