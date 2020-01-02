@@ -218,3 +218,46 @@ Type 1 LSAs also include information about its attached links, as such:
 * Network LSAs are generated for multi-access networks. They are required for OSPF to properly map routers to single multi-access network, like LANs. Generation of Type 2 LSAs depend on the existence of a DR.
 
 * Some OSPF network types require a DR, the network type tells the router's interface whether a DR should be elected. OSPF uses DR for two purposes:
+    + Create and flood a Type 2 network LSA for that subnet
+    + To aid in the detailed process of database exchange over that subnet
+
+* OSPF elects a DR and a BDR, based on the information in a OSPF Hello packet.
+* The hello packet lists each router's RID and a priority value.
+* Routers use the following election rules to decide on a DR:
+    + Choose router with highest priority value (default 1, max is 255)
+    + If priority is tied, choose the router with highest RID
+    + Choose a BDR, based on next-best priority, or if a tie, next highest RID.
+
+* To change a default priority:
+
+> ip ospf priority _value_ (interface command)
+
+* When a DR or BDR fails, or a new OSPF neighbor comes up with a higher priority:
+    + When DR fails, current BDR becomes the new DR.
+    + Election is held only for BDR, __not__ the DR.
+    + If DR and BDR have been elected, no new OSPF neighbor with higher priority can take over the DR or BDR role until DR or BDR fails.
+    + The DR's interface IP address is used as the LSID for Type 2 LSA.
+
+* Type 2 LSA also list the RIDs of the OSPF neighbors connected/attached to that multi-access network
+* Type 2 LSA is listed under "Net Link State (Area x)" in the output of __show ip ospf database__
+* To get detailed output of type 2 LSAs, use the __show ip ospf database network x.x.x.x__
+
+### Example output
+
+> show ip ospf database network 3.3.3.3
+
+## OSPF Type 3 LSA - Network Summary LSA
+
+* OSPF uses the concept of areas to reduces memory and compute resource consumption.
+* ABRs are used to connect different OSPF areas together.
+* Type 1 and Type 2 LSAs are not advertised from one area to another via ABR
+
+* Not advertising Type 1 and 2 LSAa across areas saves memory and reduces the complexity for each run of the SPF algorithm
+* This saves CPU and convergence time
+* ABRs generate a Type 3 LSA for each subnet in an area, and advertise each Type 3 LSA into the other area.
+
+* Type 3 LSA does not contain all the detailed topology information.
+* Type 3 LSA, created by ABR, consists of each subnet and a cost to reach that subnet from that ABR.
+* It summarizes the information from Type 1 & 2 LSAs
+* Known as the Network Summary LSA.
+* Type 3 LSA appears to be another subnet connected to the ABR that created and advertised the Type 3 LSA.
