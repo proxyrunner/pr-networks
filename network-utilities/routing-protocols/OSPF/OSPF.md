@@ -196,3 +196,25 @@ R3#show ip ospf database router 3.3.3.3
       Number of MTID metrics: 0
        TOS 0 Metrics: 10
 ```
+
+### More Information
+
+OSPF identifies Type 1 LSA using 32-bit linkstate identifier (LSID), and every router uses its own OSPF router-id as the LSID. ABRs create multiple Type 1 LSAs for themselve, one per hour. OSPF speakers will generate Type 1 LSAs by default.
+
+Type 1 LSAs also include information about its attached links, as such:
+
+* Interface with no neighbors:
+    + its subnet number/mask is advertised
+    + link connected to a 'stub network'
+* Interface with DR:
+    + the IP address of the DR
+    + link connected to a transit network
+* Interface with no DR:
+    + it lists the neighbor's RID
+    + link connected to 'another router (point-to-point)'
+
+## OSPF Type 2 LSA - Network LSA
+
+* Network LSAs are generated for multi-access networks. They are required for OSPF to properly map routers to single multi-access network, like LANs. Generation of Type 2 LSAs depend on the existence of a DR.
+
+* Some OSPF network types require a DR, the network type tells the router's interface whether a DR should be elected. OSPF uses DR for two purposes:
