@@ -25,5 +25,7 @@ If you do have two of the same:
 * To verify the OSPF router-id:
 
 > show ip ospf
+
 > show ip ospf database
+
 > show ip protocols
