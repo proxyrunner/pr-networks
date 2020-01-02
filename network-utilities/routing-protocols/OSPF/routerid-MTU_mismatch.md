@@ -29,3 +29,17 @@ If you do have two of the same:
 > show ip ospf database
 
 > show ip protocols
+
+
+## MTU Issues
+
+* Typical default to an IP MTU of 1500
+* Router needs to forward a packet larger than the outgoing interface's MTU, it either fragments the packet or discards it.
+* It dependso nthe setting of the Don't Fragment (DF) bit in the IP header: if it is SET, the packet is dropped, otherwise, it is fragmented
+
+* The value of MTU should be the  same on the devices attached to the same data link
+* If there is an MTU mismatch, they will not be able to exchange topology information
+
+* The neighbors will get to __EXSTART__ state and then go down.
+* A log message will be generated reporting "too many retransmissions"
+
