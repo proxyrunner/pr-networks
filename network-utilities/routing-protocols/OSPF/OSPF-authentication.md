@@ -24,4 +24,3 @@ You may do it one of two ways:
 * Multiple keys can only be configured with the type 2 MD5 authentication type.
 * This is useful when doing migration of keys
 * These keys cannot be configured as time based.
-
