@@ -6,6 +6,10 @@ In this document we're going to review the configurations to operate a fully fun
 
 ![OSPF Topology](https://raw.githubusercontent.com/gil-ryan/grs-networking-public/master/cisco-academic-testing/ccnp/route/labs/ospf-simulation.png)
 
+## Features
+
+* [Authentication](https://github.com/gil-ryan/grs-networking-public/blob/master/network-utilities/routing-protocols/OSPF/OSPF-authentication.md)
+
 ## Basic Configurations
 
 ### IOS Version

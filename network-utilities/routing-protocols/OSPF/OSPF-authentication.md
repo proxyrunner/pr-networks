@@ -10,7 +10,12 @@ Two-step process:
 You may do it one of two ways:
 
 1. Enable at the interface using the __ip ospf authentication [message-digest]__ interface-level command.
+
+> ip ospf authentication [message-digest]
+
 2. Enable on all interfaces in an area by changing the area wide authentication setting using the __area <#> authentication [message-digest]__ subcommand under router ospf.
+
+> area <#> authentication [message-digest]
 
 * Authentication Key
     + Cannot be configured area wide
