@@ -1,6 +1,6 @@
 # OSPF Lab
 
-In this document we're going to review the configurations to operate a fully functional OSPF lab on GNS3 with various features being explored. If you're new to networking, please checkout my introductory tutorial to the [dynamic routing protocol, OSPF!](https://github.com/gil-ryan/grs-networking-public/blob/master/network-utilities/routing-protocols/OSPF/OSPF.md)
+In this document we're going to review the configurations to operate a fully functional OSPF lab on GNS3 with various features being explored. If you're new to networking, please checkout my introductory tutorial to the [__dynamic routing protocol, OSPF!__](https://github.com/gil-ryan/grs-networking-public/blob/master/network-utilities/routing-protocols/OSPF/OSPF.md)
 
 ## Topology
 
