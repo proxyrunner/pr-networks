@@ -6,16 +6,18 @@
 * Objects can only have one entry inside it
 * Object-groups can have multiple entries inside it
 * There are two type of Objects that you can create
-	* Network
-	* Services
+
+1. Network
+2. Services
+
 * There are six types of Object-Groups that you can create
 
-* Network
-	* Service
-	* Protocol
-	* User
-	* ICMP-type
-	* Security
+1. Network
+2. Service
+3. Protocol
+4. User
+5. ICMP-type
+6. Security
 
 ## Configuring Objects
 
@@ -117,36 +119,52 @@ All traffic from higher security-level to lower security-level is permitted and 
 
 ### Example 1
 
-> access-list OUT_IN extended permit tcp any host 10.0.0.1 eq telnet
+```
+access-list OUT_IN extended permit tcp any host 10.0.0.1 eq telnet
+```
 
 ### Example 2
 
-> access-list OUT_IN extended permit tcp any 192.168.0.0 255.255.255.0 eq telnet
+```
+access-list OUT_IN extended permit tcp any 192.168.0.0 255.255.255.0 eq telnet
+```
 
 ### Example 3
 
-> access-list OUT_IN extended permit tcp any object O-PC eq telnet
+```
+access-list OUT_IN extended permit tcp any object O-PC eq telnet
+```
 
 ### Example 4
 
-> access-list OUT_IN extended permit object 0-telnet any object 0-Subnet
+```
+access-list OUT_IN extended permit object 0-telnet any object 0-Subnet
+```
 
 ### Example 5
 
-> access-list OUT_IN extended permit tcp any object-group OG-Hosts_and_Subnets eq telnet
+```
+access-list OUT_IN extended permit tcp any object-group OG-Hosts_and_Subnets eq telnet
+```
 
 ## Configuring Interface-Based ACL
 
 ### Example 6
 
-> access-list OUT_IN extended permit object-group OG-Telnet_DNS any object-group OG-Hosts_and_Subnets
+```
+access-list OUT_IN extended permit object-group OG-Telnet_DNS any object-group OG-Hosts_and_Subnets
+```
 
 ## Applying ACL to an interface
 
 ### Examples 1
 
-> access-group OUT_IN in interface OUTSIDE
+```
+access-group OUT_IN in interface OUTSIDE
+```
 
 ### Example 2
 
-> access-group OUT_IN out interface OUTSIDE
+```
+access-group OUT_IN out interface OUTSIDE
+```
