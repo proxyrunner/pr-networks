@@ -7,17 +7,17 @@
 * Object-groups can have multiple entries inside it
 * There are two type of Objects that you can create
 
-1. Network
-2. Services
+    1. Network
+    2. Services
 
 * There are six types of Object-Groups that you can create
 
-1. Network
-2. Service
-3. Protocol
-4. User
-5. ICMP-type
-6. Security
+    1. Network
+    2. Service
+    3. Protocol
+    4. User
+    5. ICMP-type
+    6. Security
 
 ## Configuring Objects
 
