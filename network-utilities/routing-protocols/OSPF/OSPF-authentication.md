@@ -29,3 +29,20 @@ You may do it one of two ways:
 * Multiple keys can only be configured with the type 2 MD5 authentication type.
 * This is useful when doing migration of keys
 * These keys cannot be configured as time based.
+
+## OSPF Authentication Pt. II
+
+For a type 0, no configuration is required. You can also configure authentication type for area-wide settings:
+
+> area <#> authentication (type 1)
+
+> area <#> authentication message-digest(type 2)
+
+To configure auth type using interface subcommands, you can use these
+
+> ip ospf authentication null (type 0)
+
+> ip ospf authentication (type 1)
+
+> ip ospf authentication message-digest (type 2)
+
