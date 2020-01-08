@@ -1,6 +1,6 @@
 # Networking Research
-<a href="https://github.com/gil-ryan"><img src="https://badgen.net/badge/github/gil-ryan/red?icon=github"></a><a href="https://gil-ryan.github.io"><img src="https://badgen.net/badge/personal-website/gil-ryan/red"></a>
 
+<a href="https://github.com/gil-ryan"><img src="https://badgen.net/badge/github/gil-ryan/red?icon=github"></a><a href="https://gil-ryan.github.io"><img src="https://badgen.net/badge/personal-website/gil-ryan/red"></a>
 
 ## :pencil2: Cisco Exams
 
