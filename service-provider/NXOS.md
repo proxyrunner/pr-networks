@@ -28,7 +28,7 @@ Port channel configurations that are invalid will not result in a creation of a 
 
 ## Port Channel Load Balancing
 
-![Port-Channel Load Balancing](pc-load-balancing.png)
+![Port-Channel Load Balancing](https://raw.githubusercontent.com/gil-ryan/grs-networking-public/master/img/pc-load-balancing.png)
 
 The Cisco Nexus Series switches support the bundling of up to 16 ports into a port channel.
 
@@ -47,3 +47,17 @@ You can configure the switch to use one of the following load-balancing methods:
     * Source and destination TCP or UDP port numbers
 
 The goal of load balancing is not only to utilize all available links, but also to ensure that packets with the same header will be forwarded on the same physical link in order to prevent packet reordering.
+
+## Port Channel Layer 2 and Layer 3 Interfaces
+
+A PC configuration can run on OSI Layer 2 or Layer 3. Interface classification can be chosen by the administrator.
+
+The figure shows the difference between Layer 2 and Layer 3 PC configuration.
+
+![Layer 3 Routing](https://raw.githubusercontent.com/gil-ryan/grs-networking-public/master/img/pc-l3-routing.png)
+
+You can classify port channel interfaces as Layer 2 or Layer 3 interfaces. In addition, you can configure Layer 2 port channels in either access or trunk mode. Layer 3 port channel interfaces have routed ports as channel members and may have subinterfaces.
+
+You can configure a Layer 3 port channel with a static MAC address. If you do not configure this value, the Layer 3 port channel then uses the router MAC of the first channel member to come up.
+
+On the Cisco Nexus 7000 Series Switches, all ports in a port channel must be in the same VDC.
