@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Access Denied - Unauthorized</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-gray-100 font-light leading-normal p-6 text-gray-900">
+    <h1 class="leading-tight text-3xl sm:text-4xl md:text-5xl xl:text-4xl">Access Denied</h1>
+
+    <p class="mt-6">You are not authorized to access this resource. This may occur because:</p>
+
+    <ul class="list-disc list-outside mx-6">
+      <li>your request has expired,</li>
+      <li>your request failed to include the necessary authorization parameters, or</li>
+      <li>your browser is blocking 3rd party cookies.</li>
+    </ul>
+
+    <h2 class="leading-tight text-2xl mt-12">Blocking 3rd Party Cookies?</h2>
+
+    <p>Depending on the browser you are using, you can check or modify your browser's settings for handling (and blocking) 3rd party cookies following the steps below:</p>
+
+    <h3 class="leading-tight text-xl mt-6" id="google-chrome">Google Chrome</h3>
+
+    <ol class="list-decimal list-outside mt-3 mx-6">
+      <li>Click the Menu icon in the upper right side of the browser window,</li>
+      <li>Click Settings,</li>
+      <li>Click Advanced,</li>
+      <li>Click Content settings (under Privacy and security),</li>
+      <li>Click Cookies,</li>
+      <li>"Block third-party cookies" should be unchecked (or Add Address of website and click Allow)</li>
+    </ol>
+
+    <h3 class="leading-tight text-xl mt-6" id="mozilla-firefox">Mozilla Firefox</h3>
+
+    <ol class="list-decimal list-outside mt-3 mx-6">
+      <li>Click the Menu icon in the upper right side of the browser window,</li>
+      <li>Open the Options window (for Windows users, click Options, for MacOS users, click Preferences),</li>
+      <li>Click the Privacy &amp; Security,</li>
+      <li>In the History section, select Firefox will: Remember history</li>
+    </ol>
+
+    <h3 class="leading-tight text-xl mt-6" id="apple-safari">Apple Safari</h3>
+
+    <ol class="list-decimal list-outside mt-3 mx-6">
+      <li>Click Safari in the menu bar,</li>
+      <li>Click Preferences,</li>
+      <li>Click the Privacy,</li>
+      <li>For the option Cookies and website data, select Always allow. *In older versions of Safari, for the option Block cookies, select Never</li>
+    </ol>
+
+    <h3 class="leading-tight text-xl mt-6" id="microsoft-edge">Microsoft Edge</h3>
+
+    <ol class="list-decimal list-outside mt-3 mx-6">
+      <li>Click on the More actions button in the upper right side of the window,</li>
+      <li>Click Settings,</li>
+      <li>Search for View advanced settings and click on it,</li>
+      <li>Under Cookies section, select Don't block cookies (default),</li>
+      <li>Restart Edge</li>
+    </ol>
+
+    <h3 class="leading-tight text-xl mt-6" id="microsoft-internet-explorer">Microsoft Internet Explorer</h3>
+
+    <ol class="list-decimal list-outside mt-3 mx-6">
+      <li>Click the Menu icon in the upper right side of the window,</li>
+      <li>Click Internet Options,</li>
+      <li>Click the Privacy tab,</li>
+      <li>Click Sites,</li>
+      <li>In the Address of website field enter Address of the website (be sure to include the square brackets before and after the asterisk),</li>
+      <li>Click Allow, then OK</li>
+    </ol>
+
+    <h3 class="leading-tight text-xl mt-6" id="opera">Opera</h3>
+
+    <ol class="list-decimal list-outside mt-3 mx-6">
+      <li>Click the Menu in the upper left side of the browser window,</li>
+      <li>Click Settings,</li>
+      <li>Click the Privacy &amp; Security,</li>
+      <li>Ensure the option Allow local data to be set (recommended) is selected (under "Cookies"),</li>
+      <li>Click Manage exceptions,</li>
+      <li>In the field labelled Hostname pattern enter Address of website (be sure to include the square brackets before and after the asterisk),</li>
+      <li>Choose Allow, then Done</li>
+    </ol>
+  </body>
+</html>
+
+
