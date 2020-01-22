@@ -16,3 +16,4 @@ R1(config-router)#
 ```
 
 As you can see, you can only configure __standard__ named ACLs on inbound or outbound distribute-lists. Another important factor is that classic ACLs do not affect traffic that is originated from the route, so applying one to an interface has no effect on the outgoing routing advertisements.
+
