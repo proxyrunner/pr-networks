@@ -6,4 +6,4 @@ EIGRP runs directly above IP layer as protocol number 88. RTP guarantees an orde
 
 The multicast address is 224.0.0.10.
 
-Only selected packets are sent reliably, requiring acknowledge upon receipt. For efficiency resons, 
+Only selected packets are sent reliably, requiring acknowledge upon receipt. For efficiency resons, a multiaccess network  with multicast capabilities, like Ethernet,  will not send every __hello__ packet reliably.
