@@ -1,6 +1,6 @@
 # EIGRP
 
-## Realiable Transport
+## Reliable Transport
 
 EIGRP doesn't use TCP or UDP. EIGRP uses Cisco's Reliable Transport Protcol (RTP). Not to be confused with Real-time Transport Protocol (RTP), which is a VoIP protocol. It makes sense that EIGRP was proprietary for a long while because of that.
 
@@ -14,11 +14,15 @@ Only selected packets are sent reliably, requiring acknowledge upon receipt. For
 
 What do ACK packets indicate when exchanging EIGRP updates between routers?
 
-They indicate that the router received the update information, and this acknowledgment is mandatory.
+They indicate that the router received the update information, and this acknowledgment is mandatory. After two routers have exchanged hellos and the neighbor adjacency is established, they exchange ACK packets, indicating that the other side received the update information.
 
-After two routers have exchanged hellos and the neighbor adjacency is established, they exchange ACK packets, indicating that the other side received the update information.
+## EIGRP Timers
 
-## Configure Timers
+Sometimes you need to adjust timers to improve convergence time. Some links will appear particularly ideal to do this for, but there are some drawbacks.
+
+* Asymmetrical timers may lead to flapping EIGRP neighbors and network instability.
+
+### Configure Timers
 
 ```
 BR3(config)# interface Serial 0/0
@@ -26,7 +30,7 @@ BR3(config-if)# ip hello-interval eigrp 100 10
 BR3(config-if)# ip hold-time eigrp 100 30
 ```
 
-### Validate
+#### Validate
 
 ```
 BR3# show ip eigrp interface detail serial 0/0
@@ -37,3 +41,5 @@ Se0/0                    1        0/0       0/0        1249       0/15        62
   Hello-interval is 10, Hold-time is 30
 <... output omitted ...>
 ```
+
+### 
