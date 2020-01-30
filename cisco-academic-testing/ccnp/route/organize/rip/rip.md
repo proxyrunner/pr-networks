@@ -1,3 +1,0 @@
-# RIP Deep Dive
-
-## 
