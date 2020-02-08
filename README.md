@@ -1,22 +1,83 @@
 # Public Network Repository
 
-Hello! This respository consists of my labbing and research. Please reuse and execute any of these labs exclusively at your own risk. Thanks.
+Hello! This respository consists of my labbing and research. Please reuse and execute any of these labs exclusively at your own risk. Thank you.
 
-## This section will return.
+I've have a private replication of content that I develop on first, then slowly release here in an appropriate manner.
 
-<a href="https://github.com/gil-ryan"><img src="https://badgen.net/badge/github/gil-ryan/red?icon=github"></a><a href="https://gil-ryan.github.io"><img src="https://badgen.net/badge/personal-website/gil-ryan/red"></a>
+## Network Security
 
-## :pencil2: Cisco Exams
+### Palo Alto
 
-* CCNA
-* CCNP
-     * Route
-     * Switch
-     * Troubleshoot
-* CCIE
+* [PAN-OS 8 Training]
+* [PAN-OS 9 Training]
+* [Panorama Training]
 
-## :file_folder: Network Utilities
+### Kali Linux
 
-* Traceroute
-* [Routing](https://github.com/gil-ryan/grs-networking-public/tree/master/network-utilities/routing-protocols)
-     + [OSPF](https://github.com/gil-ryan/grs-networking-public/tree/master/network-utilities/routing-protocols/OSPF)
+#### Scapy
+
+* [Packet Spoofing](https://github.com/gil-ryan/grs-networking-public/tree/master/security/scapy/packet-spoofing)
+
+## Cisco
+
+### Cloud
+
+* CCNA Cloud
+* CCNP Cloud
+
+### Collaboration
+
+* CCNA Collaboration
+* CCNP Collaboration
+
+### Cyber Ops
+
+* CCNA Cyber Ops
+
+### Data Center
+
+* CCNA Data Center    
+* CCNP Data Center
+
+### Design
+
+* CCDP
+* CCDA
+
+### Digital Transformation Specialist
+
+* Customer Success Manager Specialist
+* Cisco Business Architecture Analyst
+
+### Industrial
+
+* CCNA Industrial
+
+### Network Programmability
+
+* Network Programmability Specialist
+
+### Routing & Switching
+
+* CCNA Routing & Switching
+    + [EIGRP]
+    + [OSPF]
+* CCNP Routing & Switching
+    + [EIGRP]
+    + [OSPF]
+
+### Security
+
+* CCNA Security
+  + [ASA]
+    + [ASA Objects]
+* CCNP Security
+
+### Wireless
+* CCNA Wireless
+* CCNP Wireless
+
+## Netscout
+
+* Packet Flow Switch (PFS)
+* InfiniStream
