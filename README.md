@@ -2,7 +2,7 @@
 
 Hello! This respository consists of my labbing and research. Please reuse and execute any of these labs exclusively at your own risk. Thank you.
 
-I've have a private replication of content that I develop on first, then slowly release here in an appropriate manner.
+I have a private repo of content that I develop on first, then slowly release to this repo in an appropriate manner.
 
 ## Network Security
 
