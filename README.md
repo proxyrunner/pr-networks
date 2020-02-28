@@ -15,12 +15,6 @@ I have a private repo of content that I develop on first, then slowly release to
 
 ## Network Security
 
-### Palo Alto
-
-* [PAN-OS 8 Training]
-* [PAN-OS 9 Training]
-* [Panorama Training]
-
 ### Kali Linux
 
 #### Scapy
