@@ -4,6 +4,15 @@ Hello! This respository consists of my labbing and research. Please reuse and ex
 
 I have a private repo of content that I develop on first, then slowly release to this repo in an appropriate manner.
 
+## Cisco Certifications
+
+
+### CCNP Enterprise
+
+#### Core Exam
+
+* [350-401 ENCOR: Implementing Cisco Enterprise Network Core Technologies](https://github.com/gil-ryan/grs-networking-private/blob/master/350-401.md)
+
 ## Network Security
 
 ### Palo Alto
@@ -17,67 +26,3 @@ I have a private repo of content that I develop on first, then slowly release to
 #### Scapy
 
 * [Packet Spoofing](https://github.com/gil-ryan/grs-networking-public/tree/master/security/scapy/packet-spoofing)
-
-## Cisco
-
-### Cloud
-
-* CCNA Cloud
-* CCNP Cloud
-
-### Collaboration
-
-* CCNA Collaboration
-* CCNP Collaboration
-
-### Cyber Ops
-
-* CCNA Cyber Ops
-
-### Data Center
-
-* CCNA Data Center    
-* CCNP Data Center
-
-### Design
-
-* CCDP
-* CCDA
-
-### Digital Transformation Specialist
-
-* Customer Success Manager Specialist
-* Cisco Business Architecture Analyst
-
-### Industrial
-
-* CCNA Industrial
-
-### Network Programmability
-
-* Network Programmability Specialist
-
-### Routing & Switching
-
-* CCNA Routing & Switching
-    + [EIGRP]
-    + [OSPF]
-* CCNP Routing & Switching
-    + [EIGRP]
-    + [OSPF]
-
-### Security
-
-* CCNA Security
-  + [ASA]
-    + [ASA Objects]
-* CCNP Security
-
-### Wireless
-* CCNA Wireless
-* CCNP Wireless
-
-## Netscout
-
-* Packet Flow Switch (PFS)
-* InfiniStream
