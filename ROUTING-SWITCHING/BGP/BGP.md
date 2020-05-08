@@ -7,10 +7,10 @@
 * BGP ASN
 * Router configuration mode
 
-<pre>
-neighbor _ip-address_ remote-as _autonomous-system-number_
-neighbor _ip-address_ description _EXTERNAL NEIGHBOR [IP] - [ASN NAME] - [ASN #]_
-</pre>
+```
+neighbor *'ip-address'* remote-as _autonomous-system-number_
+neighbor *'ip-address'* description _EXTERNAL NEIGHBOR [IP] - [ASN NAME] - [ASN #]_
+```
 
 Example:
 
