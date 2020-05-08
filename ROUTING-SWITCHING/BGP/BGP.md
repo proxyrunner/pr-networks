@@ -7,6 +7,7 @@
 * BGP ASN
 * Router configuration mode
 
+#### Configuration Statements
 
 neighbor _ip-address_ remote-as _autonomous-system-number_
 
