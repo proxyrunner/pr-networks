@@ -7,9 +7,9 @@
 * BGP ASN
 * Router configuration mode
 
-```
-neighbor ip-address 1.1.2.2 remote-as 64513
-neighbor ip-address description EXTERNAL NEIGHBOR [IP] - [ASN NAME] - [ASN #]
+```markdown
+neighbor _ip-address_ remote-as _autonomous-system-number_
+neighbor _ip-address_ description _EXTERNAL NEIGHBOR [IP] - [ASN NAME] - [ASN #]_
 ```
 
 Example:
