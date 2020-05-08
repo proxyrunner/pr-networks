@@ -1,4 +1,4 @@
-# BGP
+# BGP - Border Gateway Protocol
 
 ## External Neighbors
 
@@ -18,7 +18,7 @@ Example:
 configure terminal
 router bgp 64512
 neighbor 1.1.2.2 remote-as 64513
-neighbor 1.1.2.2 description EXTERNAL NEIGHBOR 1.1.2.2 - verizon datacenter- AS64513
+neighbor 1.1.2.2 description EXTERNAL NEIGHBOR 1.1.2.2 - verizon datacenter - AS64513
 ```
 
 ### Shutdown External Neighbor
