@@ -10,7 +10,7 @@
 <pre>
 neighbor _ip-address_ remote-as _autonomous-system-number_
 neighbor _ip-address_ description _EXTERNAL NEIGHBOR [IP] - [ASN NAME] - [ASN #]_
-<pre>
+</pre>
 
 Example:
 
