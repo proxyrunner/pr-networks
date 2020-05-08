@@ -7,7 +7,7 @@
 * BGP ASN
 * Router configuration mode
 
-```md
+```
 neighbor *'ip-address'* remote-as _autonomous-system-number_
 neighbor *'ip-address'* description _EXTERNAL NEIGHBOR [IP] - [ASN NAME] - [ASN #]_
 ```
