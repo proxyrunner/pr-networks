@@ -1,22 +1,22 @@
-# Public Network Repository
+# Enhanced Interior Gateway Routing Protocol - EIGRP
 
-Hello! This respository consists of my labbing and research. Please reuse and execute any of these labs exclusively at your own risk. Thank you.
+## Quick Configuration
 
-I have a private repo of content that I develop on first, then slowly release to this repo in an appropriate manner.
+### Named EIGRP Quick Config
 
-## Cisco Certifications
-
-
-### CCNP Enterprise
-
-#### Core Exam
-
-* [350-401 ENCOR: Implementing Cisco Enterprise Network Core Technologies](https://github.com/gil-ryan/grs-networking-private/blob/master/350-401.md)
-
-## Network Security
-
-### Kali Linux
-
-#### Scapy
-
-* [Packet Spoofing](https://github.com/gil-ryan/grs-networking-public/tree/master/security/scapy/packet-spoofing)
+```
+# ENTER PRIVILEGED EXEC MODE
+conf t
+router eigrp CCIE
+add ipv4 as 1
+# /24 wildcard mask
+network 1.0.0.0 0.255.255.255
+# advertise /32
+# network 7.7.7.7
+!
+!
+# VALIDATE
+do sho run | sec route
+# EXIT ROUTER-CONFIG MODE
+end
+```
