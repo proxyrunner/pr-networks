@@ -20,3 +20,10 @@ I have a private repo of content that I develop on first, then slowly release to
 #### Scapy
 
 * [Packet Spoofing](https://github.com/gil-ryan/grs-networking-public/tree/master/security/scapy/packet-spoofing)
+
+## PERPETUAL DISCLAIMER FOR MY PUBLIC REPOSITORIES
+
+This repository is to be used and considered solely at the end-user's discretion. I __cannot__ and __will not__ assume any responsibility for the reader. By navigating to the below domains, you accept and agree that all the intellectual property, media, data, and other terms that may be considered in relation to this repository are provided solely for informational purposes. 
+ 
+ * https://github/com/gil-ryan/*
+ * https://gilbert-salas.com/*
