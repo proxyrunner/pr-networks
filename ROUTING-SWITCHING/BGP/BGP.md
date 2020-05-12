@@ -33,3 +33,7 @@ Example:
 ```
 neighbor 1.1.2.2 shutdown
 ```
+
+## Don't understand? Need an explanation?
+
+Please refer to my [FAQ](https://github.com/gil-ryan/ultimate-cli-handbook#learn-more-faq) portion of the handguide!
