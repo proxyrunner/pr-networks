@@ -13,7 +13,7 @@ neighbor _ip-address_ remote-as _autonomous-system-number_
 
 neighbor _ip-address_ description _EXTERNAL NEIGHBOR [IP] - [ASN NAME] - [ASN #]_
 
-#### Example copy & paste:
+#### Configure External Neighbors       
 
 ```
 configure terminal

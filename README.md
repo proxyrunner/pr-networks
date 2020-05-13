@@ -4,8 +4,7 @@ Hello! This respository consists of my labbing and research. As per my [disclaim
 
 I have a private repo of content that I develop on first, then slowly release to this repo in an appropriate manner.
 
-## Cisco Certifications
-
+## Certifications
 
 ### CCNP Enterprise
 
