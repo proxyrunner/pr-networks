@@ -22,4 +22,4 @@ This doc will contain immediate resources that are vital in routing and switchin
 | iBGP | 200 |
 | Unknown* | 255 | 
 
-/* If the administrative distance is 255, the router does not believe the source of that route and does not install the route into the routing table
+\* If the administrative distance is 255, the router does not believe the source of that route and does not install the route into the routing table
