@@ -1,6 +1,6 @@
 # Subnetting
 
-Most engineers uses a Subnet Calculator.
+Most engineers uses a [Subnet Calculator](http://www.subnet-calculator.com/subnet.php?net_class=A).
 
 ## Slash Notation Chart
 
