@@ -21,7 +21,10 @@ Designed for the Data Center. NX-OS is a single operating system that covers the
     + SNMP/MIB
     + NETCONF/XML
     + Configuration checkpoint and rollback
-
 * IPv4/IPv6 address-family support
+
+## Moving Forward
+
+### File Systems
 
 
