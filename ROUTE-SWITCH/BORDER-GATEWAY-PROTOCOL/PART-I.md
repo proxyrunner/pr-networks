@@ -21,7 +21,13 @@ A set of routers and networks under the control of a single administrative autho
 
 Scaling was an issue for creating ARPA net (predescessor of Internet)
 
+#### Problems Scaling
+
 ![Problems Scaling](../../img/BGP-AS1.PNG)
+
+#### Separating Domains
+
+![Domains Separated by Control](../../img/BGP-AS2.PNG)
 
 
 ## Configuring EBGP
