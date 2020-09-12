@@ -40,7 +40,12 @@ Port Aggregation Protocol is Cisco's proprietary
 |__Passive__| X| X | Y |
 |__Active__| X | Y | Y |
 
+
 ###
+
+## Further Research
+
+You may also consider [data center style EtherChannel, better known as VPC](../DATA-CENTER/NX-OS/VPC.md))
 
 ## L2 Etherchannel Configuration
 
