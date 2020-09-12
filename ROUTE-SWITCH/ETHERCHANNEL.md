@@ -46,26 +46,117 @@ Port Aggregation Protocol is Cisco's proprietary
 
 * ports must match
 
-```
-(config-if-range)# speed auto 
-(config-if-range)# duplex auto
-(config-if-range)# mdix auto
-(config-if-range)# channel-group 1 mode ?
-(config)#int port-channel 1
-# Can be treated like a L2 interface…
-(config-if)# switchport trunk encapsulation dot1q
-(config-if)# switchport mode trunk
+``` L2 CONFIGURATION
+# PRIVILEGED EXEC MODE
+# SELECT INTERFACE
+!
+interface range gig 3/3 , gig 3/2
+!
+# INTERFACE CONFIG MODE
+!
+speed auto 
+!
+duplex auto
+!
+# mdix auto
+!
+# CREATE PORT-CHANNEL GROUP
+!
+channel-group 1 mode on
+!
+no shut
+!
+exit
+!
+# SAME AS LAYER 2 INTERFACE
+!
+int port-channel 1
+!
+switchport trunk encapsulation dot1q
+!
+switchport mode trunk
+!
+no shut
+!
+end
+!
 ```
 
 ## L3 Etherchanel Configurations
 
-```
-(config-if-range)# no switchport
-(config-if-range)# channel-group 1 mode on
-(config-if-range)# exit
+* ports must match
 
-# Remember to make the port channel a routed interface as well.
-(config)# int port-channel 1
-(config-if)# no switchport
-(config-if)# ip address x.x.x.x s.s.s.s
+```
+# REMOVE LAYER 2
+no switchport
+
+#
+channel-group 1 mode on
+exit
+
+# Remember to make the port channel a routed 
+# interface as well.
+int port-channel 1
+no switchport
+ip address 10.0.250.254 255.255.255.0
+```
+
+## SHOW COMMANDS and OTHER
+
+> channel-group ?
+
+```
+## SELECT PORT-CHANNEL NUMBER
+##  MAX NUMBER IS 255
+
+LAN1-DIST-A(config-if)#channel-group ?   
+  <1-255>  Channel group number
+  auto     Enable LACP auto on this interface
+```
+
+> channel-group 1 mode ?
+
+```
+## DESIGNATE PORT-CHANNEL MODE
+
+LAN1-DIST-B(config-if-range)#channel-group 1 mode ?                 
+  active     Enable LACP unconditionally
+  auto       Enable PAgP only if a PAgP device is detected
+  desirable  Enable PAgP unconditionally
+  on         Enable Etherchannel only
+  passive    Enable LACP only if a LACP device is detected
+
+LAN1-DIST-B(config-if-range)#channel-group 1 mode on
+```
+
+> show etherchannel summary 
+
+```
+## VERIFY PORT-CHANNEL
+
+LAN1-DIST-A#show etherchannel summary 
+Flags:  D - down        P - bundled in port-channel
+        I - stand-alone s - suspended
+        H - Hot-standby (LACP only)
+        R - Layer3      S - Layer2
+        U - in use      N - not in use, no aggregation
+        f - failed to allocate aggregator
+
+        M - not in use, minimum links not met
+        m - not in use, port not aggregated due to minimum links not met
+        u - unsuitable for bundling
+        w - waiting to be aggregated
+        d - default port
+
+        A - formed by Auto LAG
+
+
+Number of channel-groups in use: 1
+Number of aggregators:           1
+
+Group  Port-channel  Protocol    Ports
+------+-------------+-----------+-----------------------------------------------
+1      Po1(SU)          -        Gi3/2(P)    Gi3/3(P)    
+
+LAN1-DIST-A#
 ```

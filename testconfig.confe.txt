@@ -1,0 +1,74 @@
+## L2 Etherchannel Configuration
+
+* ports must match
+
+```
+(config-if-range)# speed auto 
+(config-if-range)# duplex auto
+(config-if-range)# mdix auto
+(config-if-range)# channel-group 1 mode ?
+(config)#int port-channel 1
+# Can be treated like a L2 interface…
+(config-if)# switchport trunk encapsulation dot1q
+(config-if)# switchport mode trunk
+```
+
+## L3 Etherchanel Configurations
+
+```
+(config-if-range)# no switchport
+(config-if-range)# channel-group 1 mode on
+(config-if-range)# exit
+
+# Remember to make the port channel a routed interface as well.
+(config)# int port-channel 1
+(config-if)# no switchport
+(config-if)# ip address x.x.x.x s.s.s.s
+```
+
+##########################################
+# It is vital that you set VTP mode first. 
+##########################################
+
+# distribution trunk ports
+int range gi 3/3 , gig 3/2 , gi 2/1 , gig 2/0
+switchport trunk encapsulation dot1q 
+switchport trunk native vlan 1000
+switchport mode trunk
+no shut
+
+
+# access trunk ports
+int range gi 2/1 , gig 2/0
+switchport trunk encapsulation dot1q 
+switchport trunk native vlan 1000
+switchport mode trunk
+no shut
+
+
+# vtp mode server  
+vtp mode server  
+vtp domain local-vtp-a
+vtp password local-vtp-a
+vtp version 3
+
+# vtp mode client
+vtp mode client  
+vtp domain local-vtp-a
+vtp password local-vtp-a
+vtp version 3
+
+# vtp mode transparent
+vtp mode transparent  
+vtp domain local-vtp-a
+vtp password local-vtp-a
+vtp version 3
+
+# validate vtp
+access-sw-a#show vtp status
+
+
+#
+int range gi 0/0 - 3 , gig 1/0 - 3 , gig 2/0 - 3 , gig 3/0 - 3
+no media-type rj4,
+no negotiation auto
