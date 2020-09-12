@@ -87,23 +87,40 @@ end
 * ports must match
 
 ```
+# PRIVILEGED EXEC MODE
+# SELECT INTERFACE
+!
+interface range gig 5/0 , gig 6/0
+!
+# INTERFACE CONFIG MODE
+!
 # REMOVE LAYER 2
-no switchport
-
+# no switchport
 #
-channel-group 1 mode on
+channel-group 1
+!
+no shut
+!
 exit
-
+!
 # Remember to make the port channel a routed 
 # interface as well.
+!
 int port-channel 1
-no switchport
-ip address 10.0.250.254 255.255.255.0
+!
+# ip address 10.0.250.254 255.255.255.0
+!
+end
+!
 ```
 
-## SHOW COMMANDS and OTHER
+## Port-Channel L2/L3 Show Comamnds a Validation
 
 ### How to Select a Port-Channel
+
+#### L2
+
+Notice channel-group for L2 is higher than in routers
 
 > channel-group ?
 
@@ -114,6 +131,28 @@ ip address 10.0.250.254 255.255.255.0
 LAN1-DIST-A(config-if)#channel-group ?   
   <1-255>  Channel group number
   auto     Enable LACP auto on this interface
+```
+
+#### L3
+
+```
+LAN1-WAN-A(config-if-range)#channel-group ?
+  <1-64>  Channel group number
+
+LAN1-WAN-A(config-if-range)#channel-group 1 ?
+  <cr>
+
+LAN1-WAN-A(config-if-range)#channel-group 1 
+
+%Interface MTU set to channel-group MTU 1500.
+
+GigabitEthernet1/0 added as member-1 to port-channel1
+ 
+%Interface MTU set to channel-group MTU 1500.
+
+%Interface MTU set to channel-group MTU 1500.
+
+GigabitEthernet0/0 added as member-2 to port-channel1
 ```
 
 ### How to Select Port-Channel Mode
