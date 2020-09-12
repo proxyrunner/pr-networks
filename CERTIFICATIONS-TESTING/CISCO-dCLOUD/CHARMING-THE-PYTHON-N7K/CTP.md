@@ -16,7 +16,7 @@ CiscoLive_N7K# >>> cli("show vlan")
 CiscoLive_N7K# >>> 
 ```
 
-## 'clip()' API
+### 'clip()' API
 
 The _clip()_ API outputs directly to stdout and returns nothing to Python, but is more readable.
 
@@ -69,3 +69,43 @@ Remote SPAN VLANs
 Primary  Secondary  Type             Ports
 -------  ---------  ---------------  -------------------------------------------
 ```
+
+### 'clid()' - For CLI commands that support XML
+
+For CLI commands that support XML the ‘clid()’ API returns outputs as a Python dictionary.
+
+```
+CiscoLive_N7K# >>> clid("show hostname")
+{'hostname': 'CiscoLive_N7K'}
+```
+
+#### More examples with 'clid()'
+
+```python
+CiscoLive_N7K# >>> clid("show hostname")
+{'hostname': 'CiscoLive_N7K'}
+CiscoLive_N7K# >>> hostname = clid("show hostname")
+CiscoLive_N7K# >>> type(hostname)
+<type 'dict'>
+CiscoLive_N7K# >>> hostname
+{'hostname': 'CiscoLive_N7K'}
+CiscoLive_N7K# >>> 
+CiscoLive_N7K# >>> hostname.values()
+['CiscoLive_N7K']
+CiscoLive_N7K# >>> hostname.keys()
+['hostname']
+CiscoLive_N7K# >>> hostname.items()
+[('hostname', 'CiscoLive_N7K')]
+CiscoLive_N7K# >>> cli("conf t ; hostname somethingelse")
+''
+somethingelse(config)# 
+somethingelse(config)# >>> 
+somethingelse(config)# >>> 
+somethingelse(config)# >>> 
+somethingelse(config)# >>> cli("hostname CiscoLive_N7K")
+''
+CiscoLive_N7K(config)# cli("exit")
+''
+CiscoLive_N7K# >>> 
+```
+
