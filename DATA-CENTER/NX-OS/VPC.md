@@ -1,6 +1,6 @@
 # Exploring vPC and its Components
 
-Looking for [routing and switching base Etherchannel?](../../ROUTE-SWITCH/ETHERCHANNEL.md)
+Looking for [routing and switching based Etherchannel?](../../ROUTE-SWITCH/ETHERCHANNEL.md)
 
 ## Benefits of Etherchannel
 
@@ -35,7 +35,9 @@ Finally, it is vital you do a final check of all port setting. The interfaces mu
 
 ### Now lets explore vPC
 
-Despite implications of _Spanning Tree Protocol__ vPC allows us to use allow all the bandwidth available to us on switche.
+Despite implications of _Spanning Tree Protocol__ vPC allows us to use allow all the bandwidth available to us on switches.
+
+![vPC Terminology](../../img/vpc-term.png)
 
 ## Virtual Port-Channel (vPC)
 
@@ -51,6 +53,8 @@ Despite implications of _Spanning Tree Protocol__ vPC allows us to use allow all
 * __Non-vPC VLANs__ - VLANs not carried over the peer-link
 * __vPC orphan-ports__ - non vPC ports that are mapped to the vPC VLANs
 
+![vPC Terminology](../../img/vpc-best-p.png)
+
 ## Implementation Best Practices
 
 * Utilize diverse 10GE modules to form vPC peer-link
@@ -62,3 +66,9 @@ Despite implications of _Spanning Tree Protocol__ vPC allows us to use allow all
     + if mgmt0 interface is used as a vPC keepalivev linkm it should be connected to an OOB manage
     + back-t-back mgmt0 connection should only be used in single supervisor implementation
     * Do not use SVI interface between vPC peer-link as vPC keppalive link
+
+## Understanding how vPC Functions
+
+### vPC failure convergence summary
+
+![vPC Terminology](../../img/vPC-failover.png)

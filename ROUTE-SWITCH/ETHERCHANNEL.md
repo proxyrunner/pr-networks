@@ -119,7 +119,7 @@ end
 !
 ```
 
-## Port-Channel L2/L3 Show Comamnds a Validation
+## Port-Channel L2/L3 Show Commands and Validation
 
 ### How to Select a Port-Channel
 
