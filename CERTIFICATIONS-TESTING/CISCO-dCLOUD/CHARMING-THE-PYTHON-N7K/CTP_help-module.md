@@ -2,6 +2,23 @@
 
 I'm going to shorthand this tutorial's name to CTP so it's less cumbersome to name files.
 
+## Show Commands
+
+show hostname
+show cdp neighbor
+show cdp neighbor | xml
+show ip int brief
+show ip route local
+show ip route ospf
+show bgp ipv4 unicast summary
+show ip route bgp
+IPv6 will be configured in scenario 5
+show ipv6 int brief
+show bgp ipv6 unicast summary
+show ipv6 route
+
+___
+
 ## Help
 
 *  If you want to ask for help on a particular object directly from the interpreter, you can enter: ‘help(“object”)
