@@ -1,10 +1,14 @@
 # Getting Started
 
+So...what the hell am I talking about? Great question, for now, this repository will focus on [Cisco Systems Data Center products.](https://www.cisco.com/c/en/us/solutions/data-center-virtualization/index.html) We will do some in depth dives in the _Nexus_ platform, followed by the _Application Centric Infrastructure_, better known as _ACI_.
+
 ## Table of Contents
+
+### Feature Configuration
 
 * [Virtual Port Channel - VPC](./VPC.md)
     + [VPC Configurations](./CONFIGURATIONS/vpc.conf)
-* [Virtual Device Context - VDC](./VPC.md)
+* [Virtual Device Context - VDC](./VDC.md)
     + [VDC Configurations](./CONFIGURATIONS/vdc.conf)
 
 
