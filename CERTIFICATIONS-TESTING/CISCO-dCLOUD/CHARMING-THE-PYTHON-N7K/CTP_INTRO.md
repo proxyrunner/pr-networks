@@ -2,6 +2,14 @@
 
 I'm going to shorthand this tutorial's name to CTP so it's less cumbersome to name files.
 
+## Goals
+
+* Scenario 1. Python Interpreter
+* Scenario 2. Basic Python Programming
+* Scenario 3. Configure interface description using CDP neighbor table
+* Scenario 4. Configure interface description based on CDP XML elements
+* Scenario 5. Configure IPv6 addresses and BGPv6 protocol
+
 ## Cisco Module
 
 ### 'cli()' API
