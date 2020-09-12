@@ -1,4 +1,14 @@
-# NX-OS
+# Getting Started
+
+## Table of Contents
+
+* [Virtual Port Channel - VPC](./VPC.md)
+    + [VPC Configurations](./CONFIGURATIONS/vpc.conf)
+* [Virtual Device Context - VDC](./VPC.md)
+    + [VDC Configurations](./CONFIGURATIONS/vdc.conf)
+
+
+## NX-OS Features
 
 Designed for the Data Center. NX-OS is a single operating system that covers the entire Cisco Nexus Platform. It had true modularity, meaning you only enable process, so if want to run _Telnet_, it must be enabled.
 
@@ -22,9 +32,3 @@ Designed for the Data Center. NX-OS is a single operating system that covers the
     + NETCONF/XML
     + Configuration checkpoint and rollback
 * IPv4/IPv6 address-family support
-
-## Moving Forward
-
-### File Systems
-
-

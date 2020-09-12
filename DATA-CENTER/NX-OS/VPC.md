@@ -72,3 +72,21 @@ Despite implications of _Spanning Tree Protocol__ vPC allows us to use allow all
 ### vPC failure convergence summary
 
 ![vPC Terminology](../../img/vPC-failover.PNG)
+
+* no impact with vPC peer-keepalive link failure
+* no impact with supervisor failover or ISSU (in-service software upgrade)
+* when vPC channel member fails, traffic is re-hased over existing member
+* when half of the vPC channel fails, traffic is re-hashed / re-routed to vPC peer
+    + some traffic will traverse across vPC peer-link
+* when vPC primary switch fails, traffic is re-hased / re-routed to vPC secondary switch
+    + vPC-peer-switch implemented to eliminate STP convergence
+* when vPC secondary switch fails, traffic is re-hased / re-routed to vPC primary switch
+
+### vPC failure convergence summary
+
+So what if the vPC peer-link fails?
+
+* vPC peer-link fails, the secondary vPC peer suspends local vPC and shuts down SVIs of vPC VLANs
+    + single-homed devices coneccted to vPC secondary devices will be isolated
+    + dual-active does not occur if peer-keepalive link fails after vPC peer=link failure
+
