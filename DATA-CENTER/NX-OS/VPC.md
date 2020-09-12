@@ -37,7 +37,7 @@ Finally, it is vital you do a final check of all port setting. The interfaces mu
 
 Despite implications of _Spanning Tree Protocol__ vPC allows us to use allow all the bandwidth available to us on switches.
 
-![vPC Terminology](../../img/vpc-term.png)
+![vPC Terminology](../../img/vpc-term.PNG)
 
 ## Virtual Port-Channel (vPC)
 
@@ -53,7 +53,7 @@ Despite implications of _Spanning Tree Protocol__ vPC allows us to use allow all
 * __Non-vPC VLANs__ - VLANs not carried over the peer-link
 * __vPC orphan-ports__ - non vPC ports that are mapped to the vPC VLANs
 
-![vPC Terminology](../../img/vpc-best-p.png)
+![vPC Terminology](../../img/vpc-best-p.PNG)
 
 ## Implementation Best Practices
 
@@ -71,4 +71,4 @@ Despite implications of _Spanning Tree Protocol__ vPC allows us to use allow all
 
 ### vPC failure convergence summary
 
-![vPC Terminology](../../img/vPC-failover.png)
+![vPC Terminology](../../img/vPC-failover.PNG)
