@@ -1,5 +1,7 @@
 # Exploring vPC and its Components
 
+Looking for [routing and switching base Etherchannel?](../../ROUTE-SWITCH/ETHERCHANNEL.md)
+
 ## Benefits of Etherchannel
 
 * EtherChannel is often used between the switches in order to increase the capacity of the connection between them by performing a load balancing of the frames traversing the channel.
