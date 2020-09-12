@@ -103,6 +103,8 @@ ip address 10.0.250.254 255.255.255.0
 
 ## SHOW COMMANDS and OTHER
 
+### How to Select a Port-Channel
+
 > channel-group ?
 
 ```
@@ -113,6 +115,8 @@ LAN1-DIST-A(config-if)#channel-group ?
   <1-255>  Channel group number
   auto     Enable LACP auto on this interface
 ```
+
+### How to Select Port-Channel Mode
 
 > channel-group 1 mode ?
 
@@ -128,6 +132,8 @@ LAN1-DIST-B(config-if-range)#channel-group 1 mode ?
 
 LAN1-DIST-B(config-if-range)#channel-group 1 mode on
 ```
+
+### Verify Port-Channel interfaces
 
 > show etherchannel summary 
 
