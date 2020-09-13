@@ -90,3 +90,12 @@ So what if the vPC peer-link fails?
     + single-homed devices coneccted to vPC secondary devices will be isolated
     + dual-active does not occur if peer-keepalive link fails after vPC peer=link failure
 
+## Building a vPC Domain
+
+Order matters!
+
+1. Create vPC domain
+2. Establish Peer Keepalive connectivity
+3. Create a Peer link
+4. Create vPCs
+5. make sure configs are consistent
