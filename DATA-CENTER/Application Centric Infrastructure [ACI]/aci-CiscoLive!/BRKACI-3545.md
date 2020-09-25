@@ -40,3 +40,5 @@ This is a publically offered CiscoLive! 2020 presentations. You can find the [pr
 ## Basic Topology
 
 ![Basically ACI Topology](../../../img/basic-aci-topology.png)
+
+__TEP__ is a tunnel endpoint address and each spine has one. Tthe purpose of that would be bcause ... [TO BE CONTINUED]
