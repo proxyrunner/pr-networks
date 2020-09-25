@@ -31,8 +31,12 @@ This is a publically offered CiscoLive! 2020 presentations. You can find the [pr
 
 | Acronyms | Definitions |
 |:-:|:-:|
-| d_XXX_o| Outer Destination XXX (dIPo = Outer Destination IP)|
-| s_XXX_o| Outer Source XXX (sIPo = Outer Source IP)|
-| d_XXX_i| Inner Destination XXX (dIPi = Inner Source IP)|
+| dXXXo| Outer Destination XXX (dIPo = Outer Destination IP)|
+| sXXXo| Outer Source XXX (sIPo = Outer Source IP)|
+| dXXXi| Inner Destination XXX (dIPi = Inner Source IP)|
 | GIOp| Outer Multicast Group IP|
 | VNID| Virtual Network Identifier|
+
+## Basic Topology
+
+![Basically ACI Topology](../../../img/basic-aci-topology.png)
