@@ -1,6 +1,10 @@
 # Cisco's Adaptive Security Appliance or ASA
 
-Cisco ASA software is one of the best and most classical firewall out there. To put it simply, an ASA comes out-of-the-box with everything secure, so nothing will traverse through it without a whitelist.
+Cisco ASA software is one of the best and most classical firewall out there. To put it simply, an ASA comes out-of-the-box with everything secure and locked-down tight. Nothing will traverse through an out-of-the-box ASA without a whitelist being created.
+
+Understanding the ASA was a daunting and overwhelming task for me when I first got into networking. That's why I've created this guide to get started fast.
+
+## Getting Started on ASA
 
 Contrary to many popular introductory tutorials, Layer-3 connectivity can be established as long as the following criteria is met:
 
