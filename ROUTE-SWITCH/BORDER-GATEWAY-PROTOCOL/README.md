@@ -25,12 +25,12 @@ What makes it challenging is that BGP is designed to adhere to many-many, and co
 
 ## Table of Contents
 
-* [Basic BGP Concepts]
-    + [Configuring EBGP]
-    + [Configuring IBGP]
-    + [Multihop EBGP]
-    + [Route Exchange over BGP]
-    + [Route Aggregation]
+* [Basic BGP Concepts](./PART1/)
+    + [Configuring EBGP](./PART1/1.md)
+    + [Configuring IBGP](./PART1/1.md)
+    + [Multihop EBGP](./PART1/1.md)
+    + [Route Exchange over BGP](./PART1/1.md)
+    + [Route Aggregation](./PART1/1.md)
 * [Routing Policies]
     + [BGP Policy]
     + [Route and Prefix Filters]
