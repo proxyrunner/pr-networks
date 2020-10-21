@@ -1,28 +1,0 @@
-Execute these CLI commands from the CiscoLive_N7K# prompt
-show hostnameshow cdp neighborshow cdp neighbor | xmlshow ip int briefshow ip route localshow ip route ospfshow bgp ipv4 unicast summaryshow ip route bgpIPv6 will be configured in scenario 5show ipv6 int briefshow bgp ipv6 unicast summaryshow ipv6 route
-
-import osos.chdir("/bootflash/scripts")f = open("CiscoLive2015.py", 'w')f.write("#!/usr/bin/env python\n")f.write("import sys\n")f.write("args = sys.argv[1:]\n")f.write("for arg in args:\n")
-# ESCAPE SEQ TAB REQUIRED OVER tab KEYf.write("\tprint 'Welcome to CiscoLive2015 ' + arg\n")f.close()exit
-show file bootflash:scripts/CiscoLive2015.pysource CiscoLive2015.py <your_name>Welcome to CiscoLive2015 <your_name>.
-
-import mathradius = 10circ_area = math.pi * radius ** 2circ_area314.1592653589793
-CiscoLive_N7K# >>>
-
-from random import randint
-radius = []
-for iter in range(3):
-	radius.append(randint(1,10))
-
-type(radius), radius
-# OUTPUT
-# (<type 'list'>, [7, 4, 4])
-for integer in radius:
-	areaCircle(integer)
-# OUTPUT
-# 153.93804002589985
-# 50.26548245743669
-# 50.26548245743669
-
-from convertipv4 import getIPv6
-getIPv6("10.7.0.1")
-'2001::0a07:0001'
