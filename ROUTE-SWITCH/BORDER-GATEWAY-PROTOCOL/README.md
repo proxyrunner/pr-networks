@@ -1,4 +1,4 @@
-# A full guide to BGP
+# A Full Guide to BGP
 
 Safari Books with Jeff Doyle
 
