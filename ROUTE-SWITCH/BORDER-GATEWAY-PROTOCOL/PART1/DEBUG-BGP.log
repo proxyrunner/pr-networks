@@ -1,0 +1,72 @@
+# Advanced Debugging
+
+#---------------[ neighbor issues clear ip bgp * ] ---------------#
+
+```
+## notice line 5, the clear ip bgp set a 'Remote close' in the debugging
+## take a close look at all of them! 
+
+R1#debug ip bgp 
+BGP debugging is on for address family: IPv4 Unicast 
+*Oct 21 22:28:23.003: BGP: topo global:IPv4 Unicast:base Scanning routing tables
+*Oct 21 22:28:23.003: BGP: topo global:IPv4 Multicast:base Scanning routing tables
+*Oct 21 22:28:39.111: BGP: ses global 10.2.3.5 (0x6AB2FE48:1) read request no-op
+*Oct 21 22:28:39.111: BGP: ses global 10.2.3.5 (0x6AB2FE48:1) Remote close.
+*Oct 21 22:28:39.115: BGP: nbr_topo global 10.2.3.5 IPv4 Unicast:base (0x6AB2FE48:1) Not scheduling for GR processing [Peer did not advertise GR cap]
+*Oct 21 22:28:39.119: BGP: ses global 10.2.3.5 (0x6AB2FE48:1) Reset (Peer closed the session).
+*Oct 21 22:28:39.127: BGP: nbr_topo global 10.2.3.5 IPv4 Unicast:base (0x6AB2FE48:1) NSF delete stale NSF not active
+*Oct 21 22:28:39.127: BGP: nbr_topo global 10.2.3.5 IPv4 Unicast:base (0x6AB2FE48:1) NSF no stale paths state is NSF not active
+*Oct 21 22:28:39.131: BGP: nbr_topo global 10.2.3.5 IPv4 Unicast:base (0x6AB2FE48:1) Resetting ALL counters.
+*Oct 21 22:28:39.131: BGP: 10.2.3.5 closing
+*Oct 21 22:28:39.135: BGP: ses global 10.2.3.5 (0x6AB2FE48:1) Session close and reset neighbor 10.2.3.5 topostate
+*Oct 21 22:28:39.135: BGP: nbr_topo global 10.2.3.5 IPv4 Unicast:base (0x6
+R1#AB2FE48:1) Resetting ALL counters.
+*Oct 21 22:28:39.135: BGP: 10.2.3.5 went from Established to Idle
+*Oct 21 22:28:39.135: %BGP-5-ADJCHANGE: neighbor 10.2.3.5 Down Peer closed the session
+*Oct 21 22:28:39.135: %BGP_SESSION-5-ADJCHANGE: neighbor 10.2.3.5 IPv4 Unicast topology base removed from session  Peer closed the session
+*Oct 21 22:28:39.135: BGP: ses global 10.2.3.5 (0x6AB2FE48:1) Removed topology IPv4 Unicast:base
+*Oct 21 22:28:39.139: BGP: ses global 10.2.3.5 (0x6AB2FE48:1) Removed last topology
+*Oct 21 22:28:39.139: BGP: nbr global 10.2.3.5 Open active delayed 8192ms (35000ms max, 60% jitter)
+*Oct 21 22:28:39.139: BGP: nbr global 10.2.3.5 Active open failed - open timer running
+*Oct 21 22:28:39.391: BGP: 10.2.3.5 passive open to 10.2.3.1
+*Oct 21 22:28:39.391: BGP: 10.2.3.5 passive went from Idle to Connect
+*Oct 21 22:28:39.395: BGP: ses global 10.2.3.5 (0x6AA1A800:0) pas Setting open delay timer to 60 seconds.
+*Oct 21 22:28:39.399: BGP: ses global 10.2.3.5 (0x6AA1A8
+R1#00:0) pas read request no-op
+*Oct 21 22:28:39.399: BGP: 10.2.3.5 passive rcv message type 1, length (excl. header) 38
+*Oct 21 22:28:39.399: BGP: ses global 10.2.3.5 (0x6AA1A800:0) pas Receive OPEN
+*Oct 21 22:28:39.399: BGP: 10.2.3.5 passive rcv OPEN, version 4, holdtime 180 seconds
+*Oct 21 22:28:39.399: BGP: 10.2.3.5 passive rcv OPEN w/ OPTION parameter len: 28
+*Oct 21 22:28:39.403: BGP: 10.2.3.5 passive rcvd OPEN w/ optional parameter type 2 (Capability) len 6
+*Oct 21 22:28:39.403: BGP: 10.2.3.5 passive OPEN has CAPABILITY code: 1, length 4
+*Oct 21 22:28:39.403: BGP: 10.2.3.5 passive OPEN has MP_EXT CAP for afi/safi: 1/1
+*Oct 21 22:28:39.403: BGP: 10.2.3.5 passive rcvd OPEN w/ optional parameter type 2 (Capability) len 2
+*Oct 21 22:28:39.403: BGP: 10.2.3.5 passive OPEN has CAPABILITY code: 128, length 0
+*Oct 21 22:28:39.403: BGP: 10.2.3.5 passive OPEN has ROUTE-REFRESH capability(old) for all address-families
+*Oct 21 22:28:39.403: BGP: 10.2.3.5 passive rcvd OPEN w/ optiona
+R1#l parameter type 2 (Capability) len 2
+*Oct 21 22:28:39.403: BGP: 10.2.3.5 passive OPEN has CAPABILITY code: 2, length 0
+*Oct 21 22:28:39.403: BGP: 10.2.3.5 passive OPEN has ROUTE-REFRESH capability(new) for all address-families
+*Oct 21 22:28:39.403: BGP: 10.2.3.5 passive rcvd OPEN w/ optional parameter type 2 (Capability) len 2
+*Oct 21 22:28:39.403: BGP: 10.2.3.5 passive OPEN has CAPABILITY code: 70, length 0
+*Oct 21 22:28:39.403: BGP: ses global 10.2.3.5 (0x6AA1A800:0) pas Enhanced Refresh cap received in open message
+*Oct 21 22:28:39.403: BGP: 10.2.3.5 passive rcvd OPEN w/ optional parameter type 2 (Capability) len 6
+*Oct 21 22:28:39.403: BGP: 10.2.3.5 passive OPEN has CAPABILITY code: 65, length 4
+*Oct 21 22:28:39.403: BGP: 10.2.3.5 passive OPEN has 4-byte ASN CAP for: 65002
+*Oct 21 22:28:39.403: BGP: nbr global 10.2.3.5 neighbor does not have IPv4 MDT topology activated
+*Oct 21 22:28:39.403: BGP: 10.2.3.5 passive rcvd OPEN w/ remote AS 65002, 4-byte remote AS 65002
+*Oct
+R1# 21 22:28:39.407: BGP: ses global 10.2.3.5 (0x6AA1A800:0) pas Adding topology IPv4 Unicast:base
+*Oct 21 22:28:39.407: BGP: ses global 10.2.3.5 (0x6AA1A800:0) pas Send OPEN
+*Oct 21 22:28:39.407: BGP: ses global 10.2.3.5 (0x6AA1A800:0) pas Building Enhanced Refresh capability
+*Oct 21 22:28:39.407: BGP: 10.2.3.5 passive went from Connect to OpenSent
+*Oct 21 22:28:39.407: BGP: 10.2.3.5 passive sending OPEN, version 4, my as: 65003, holdtime 180 seconds, ID 1010101
+*Oct 21 22:28:39.407: BGP: 10.2.3.5 passive went from OpenSent to OpenConfirm
+*Oct 21 22:28:39.423: BGP: 10.2.3.5 passive went from OpenConfirm to Established
+*Oct 21 22:28:39.427: BGP: ses global 10.2.3.5 (0x6AA1A800:1) pas Assigned ID
+*Oct 21 22:28:39.427: BGP: nbr global 10.2.3.5 Stop Active Open timer as all topologies are allocated
+*Oct 21 22:28:39.427: BGP: ses global 10.2.3.5 (0x6AA1A800:1) Up
+*Oct 21 22:28:39.431: %BGP-5-ADJCHANGE: neighbor 10.2.3.5 Up 
+*Oct 21 22:28:40.423: BGP_Router: unhandled major event c
+R1#ode 128, minor 0
+```

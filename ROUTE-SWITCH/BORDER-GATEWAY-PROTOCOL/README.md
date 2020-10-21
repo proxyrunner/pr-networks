@@ -13,6 +13,10 @@ What makes it challenging is that BGP is designed to adhere to many-many, and co
 * PATH attributes
 * tools and techniques for controlling large BGP domains
 
+### Note
+
+We're working on BGP version 4! That's what you should be working on.
+
 ### Basic Understandings (Prerequisites)
 
 * IP routing

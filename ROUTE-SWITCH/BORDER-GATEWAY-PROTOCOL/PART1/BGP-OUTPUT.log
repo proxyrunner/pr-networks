@@ -1,5 +1,7 @@
 # BGP Output
 
+## show ip bgp neighbor [IP-ADDR]
+
 ```
 R1#sho ip bgp neighbor 10.2.3.5
 BGP neighbor is 10.2.3.5,  remote AS 65002, external link
@@ -108,4 +110,38 @@ Sent: 14 (retransmit: 0, fastretransmit: 0, partialack: 0, Second Congestion: 0)
  Packets received in fast path: 0, fast processed: 0, slow path: 0
  fast lock acquisition failures: 0, slow path: 0
 TCP Semaphore      0x6AB80A44  FREE 
+```
+
+## debugs
+
+```
+R1#debug ip bgp ?
+  A.B.C.D            BGP neighbor address
+  addpath            BGP additional path events
+  all                All address families
+  dampening          BGP dampening
+  diversepath        BGP diverse path events
+  events             BGP events
+  groups             BGP Config (peer-groups, templates) and Update groups
+  igp-metric ignore  BGP igp-metric ignore events
+  import             BGP path import across topologies, VRFs or AFs
+  in                 BGP Inbound information
+  internal           BGP internal
+  ipv4               Address family
+  ipv6               Address family
+  keepalives         BGP keepalives
+  l2vpn              Address family
+  mpls               BGP MPLS label distribution
+  nsap               Address family
+  out                BGP Outbound information
+  range              BGP dynamic range
+  rib-filter         Next hop route watch filter events
+  route-server       BGP route server
+  rtfilter           Address family
+  topology           Routing topology instance
+  updates            BGP updates
+  vpnv4              Address family
+  vpnv6              Address family
+  <cr>
+
 ```
