@@ -29,12 +29,14 @@ We're working on BGP version 4! That's what you should be working on.
 
 ## Table of Contents
 
-* [Basic BGP Concepts](./PART1/)
-    + [Configuring EBGP](./PART1/1.1.md)
-    + [Configuring IBGP](./PART1/1.1.md)
-    + [Multihop EBGP](./PART1/1.1.md)
-    + [Route Exchange over BGP](./PART1/1.1.md)
-    + [Route Aggregation](./PART1/1.1.md)
+* [Basic BGP Concepts](./PART1/1.1.md)
+    + [Basic BGP Concepts Pt. II](./PART1/1.2.md)
+    + [Configuring EBGP](./PART1/2.1.md)
+    + [BGP Basic Show Commands](./PART1/2.1.md)
+    + [Configuring IBGP](./PART1/README.md)
+    + [Multihop EBGP](./PART1/README.md)
+    + [Route Exchange over BGP](./PART1/README.md)
+    + [Route Aggregation](./PART1/README.md)
 * [Routing Policies]
     + [BGP Policy]
     + [Route and Prefix Filters]
