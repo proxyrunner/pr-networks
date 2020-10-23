@@ -33,10 +33,10 @@ We're working on BGP version 4! That's what you should be working on.
     + [Basic BGP Concepts Pt. II](./PART1/1.2.md)
     + [Configuring EBGP](./PART1/2.1.md)
     + [BGP Basic Show Commands](./PART1/2.1.md)
-    + [Configuring IBGP](./PART1/README.md)
-    + [Multihop EBGP](./PART1/README.md)
-    + [Route Exchange over BGP](./PART1/README.md)
-    + [Route Aggregation](./PART1/README.md)
+    + [Configuring IBGP](./PART1/3.1.md)
+    + [Multihop EBGP](./PART1/3.2.md)
+    + [Route Exchange over BGP](./PART1/#)
+    + [Route Aggregation](./PART1/#)
 * [Routing Policies]
     + [BGP Policy]
     + [Route and Prefix Filters]
