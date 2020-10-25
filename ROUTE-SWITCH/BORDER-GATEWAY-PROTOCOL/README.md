@@ -35,10 +35,10 @@ We're working on BGP version 4! That's what you should be working on.
     + [BGP Basic Show Commands](./PART1/2.1.md)
     + [Configuring IBGP](./PART1/3.1.md)
     + [Configuring IBGP Continued](./PART1/3.2.md)
-    + [Multihop EBGP](./PART1/4.1)
-    + [Multihop EBGP Security](./PART1/4.2)
-    + [Route Exchange over BGP](./PART1/5.1)
-    + [Routing Information Databade (RIB)](./PART1/5.2)
+    + [Multihop EBGP](./PART1/4.1.md)
+    + [Multihop EBGP Security](./PART1/4.2.md)
+    + [Route Exchange over BGP](./PART1/5.1.md)
+    + [Routing Information Databade (RIB)](./PART1/5.2.md)
         - NEXT_HOP Attribute
         - ORIGIN Attribute
     + [Route Aggregation](./PART1/6.1.md)
