@@ -29,19 +29,19 @@ We're working on BGP version 4! That's what you should be working on.
 
 ## Table of Contents
 
-* [Basic BGP Concepts](./PART1/1.1.md)
-    + [Basic BGP Concepts Pt. II](./PART1/1.2.md)
-    + [Configuring EBGP](./PART1/2.1.md)
-    + [BGP Basic Show Commands](./PART1/2.1.md)
-    + [Configuring IBGP](./PART1/3.1.md)
-    + [Configuring IBGP Continued](./PART1/3.2.md)
-    + [Multihop EBGP](./PART1/4.1.md)
-    + [Multihop EBGP Security](./PART1/4.2.md)
-    + [Route Exchange over BGP](./PART1/5.1.md)
-    + [Routing Information Databade (RIB)](./PART1/5.2.md)
+* [Basic BGP Concepts](./MOD1/1.1.md)
+    + [Basic BGP Concepts Pt. II](./MOD1/1.2.md)
+    + [Configuring EBGP](./MOD1/2.1.md)
+    + [BGP Basic Show Commands](./MOD1/2.1.md)
+    + [Configuring IBGP](./MOD1/3.1.md)
+    + [Configuring IBGP Continued](./MOD1/3.2.md)
+    + [Multihop EBGP](./MOD1/4.1.md)
+    + [Multihop EBGP Security](./MOD1/4.2.md)
+    + [Route Exchange over BGP](./MOD1/5.1.md)
+    + [Routing Information Databade (RIB)](./MOD1/5.2.md)
         - NEXT_HOP Attribute
         - ORIGIN Attribute
-    + [Route Aggregation](./PART1/6.1.md)
+    + [Route Aggregation](./MOD1/6.1.md)
 * [Routing Policies]
     + [BGP Policy]
     + [Route and Prefix Filters]
