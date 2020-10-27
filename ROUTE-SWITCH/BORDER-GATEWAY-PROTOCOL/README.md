@@ -38,7 +38,7 @@ We're working on BGP version 4! That's what you should be working on.
     + [Multihop EBGP](./MOD1/4.1.md)
     + [Multihop EBGP Security](./MOD1/4.2.md)
     + [Route Exchange over BGP](./MOD1/5.1.md)
-    + [Routing Information Databade (RIB)](./MOD1/5.2.md)
+    + [Routing Information Database (RIB)](./MOD1/5.2.md)
         - NEXT_HOP Attribute
         - ORIGIN Attribute
     + [Route Aggregation](./MOD1/6.1.md)
