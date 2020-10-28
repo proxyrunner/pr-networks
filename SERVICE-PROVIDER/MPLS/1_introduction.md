@@ -32,6 +32,8 @@
 * disadvantages of the peer-to-peer model
     + provider participates in the routing of customer
 
+![ATM and Frame Relay is now typically MPLS](./img/atm-fr-now-MPLS.png)
+
 ## Traffic Engineering (TE)
 
 * TE is source routing
