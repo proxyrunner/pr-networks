@@ -1,6 +1,6 @@
 # MPLS Fundamentals
 
-[Back](./READMD.md) to the table of contents.
+[Back](./README.md) to the table of contents.
 
 * Tag Switching, 1998
 * Label switching technique, replacing forwarding based on IP
