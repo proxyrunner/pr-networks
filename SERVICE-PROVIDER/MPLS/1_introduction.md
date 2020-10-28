@@ -17,6 +17,8 @@
 * the peer-to-peer model MPLS VPN
 * traffic engineering
 
+![Example of Label Switching via BGP free-core](./img/mpls-bgp-freecore-ink.png)
+
 ## Peer-to-Peer Model for MPLS VPN
 
 * advantages of peer-to-peer model
