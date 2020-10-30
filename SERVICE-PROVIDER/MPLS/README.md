@@ -9,7 +9,7 @@
 * [Introduction to MPLS Fundamentals](./1_introduction.md)
 * [MPLS Architecture](./MOD1/1.0.md)
 * [MPLS Labels, LSPs, and FECs](./MOD1/2.1.md)
-* [Label Distribution Protocols](./#)
+* [Label Distribution Protocols](./MOD1/2.2.md)
 * [Label Distribution Modes](./#)
 * [Label Forwarding Instance Base (LFIB)](./#)
 
