@@ -6,7 +6,7 @@
 
 ### Introduction and Architecture
 
-* [Introduction to MPLS Fundamentals](./1_introduction.md)
+* [Introduction to MPLS Fundamentals](./MOD1/1.0.md)
 * [MPLS Architecture](./MOD1/1.0.md)
 * [MPLS Labels, LSPs, and FECs](./MOD1/2.1.md)
 * [Label Distribution Protocols](./MOD1/2.2.md)
