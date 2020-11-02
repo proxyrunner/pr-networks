@@ -1,3 +1,9 @@
+# Quick Notes
+
+https://www.reddit.com/r/netsec/wiki/start
+https://old.reddit.com/r/netsec/
+
+
 ## ENABLE LACP
 !
 # ENABLE LACP

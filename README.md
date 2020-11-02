@@ -14,13 +14,17 @@ I have a private repo of content that I develop on first, then slowly release to
 
 * [MPLS](./SERVICE-PROVIDER/MPLS/README.md)
 
+### TCP-IP
+
+* [TCP-IP](./TCP-IP/README.md)
+
 ## Certifications
 
 ### CCNP Enterprise
 
 #### Core Exam
 
-* [350-401 ENCOR: Implementing Cisco Enterprise Network Core Technologies](https://github.com/gil-ryan/grs-networking-private/blob/master/350-401.md)
+* [350-401 ENCOR: Implementing Cisco Enterprise Network Core Technologies](https://github.com/gil-ryan/grs-networking-public/#)
 
 ## Network Security
 
