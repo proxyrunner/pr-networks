@@ -8,9 +8,14 @@
 
 ### Security
 
-*[Palo-Alto](./SECURITY/PALO-ALTO/README.md)
-    + [Essentials](./SECURITY/PALO-ALTO/README.md)
-    + [Technologies](./SECURITY/PALO-ALTO/README.md)
-    + [Advanced Technologies](./SECURITY/PALO-ALTO/README.md)
-    + [Policies](./SECURITY/PALO-ALTO/README.md)
-    + [Advanced Policies](./SECURITY/PALO-ALTO/README.md)
+#### Palo Alto
+
+[Essentials](./SECURITY/PALO-ALTO/README.md)
+
+[Technologies](./SECURITY/PALO-ALTO/README.md)
+
+[Advanced Technologies](./SECURITY/PALO-ALTO/README.md)
+
+[Policies](./SECURITY/PALO-ALTO/README.md)
+
+[Advanced Policies](./SECURITY/PALO-ALTO/README.md)
