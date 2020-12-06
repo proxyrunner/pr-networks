@@ -4,11 +4,11 @@
 
 ### Data Center
 
-[DATA-CENTER](./DATA-CENTER/README.md)
+[Data Center](./DATA-CENTER/README.md)
 
 ### Security
 
-[Palo-Alto](./SECURITY/PALO-ALTO/README.md)
+*[Palo-Alto](./SECURITY/PALO-ALTO/README.md)
     + [Essentials](./SECURITY/PALO-ALTO/README.md)
     + [Technologies](./SECURITY/PALO-ALTO/README.md)
     + [Advanced Technologies](./SECURITY/PALO-ALTO/README.md)
