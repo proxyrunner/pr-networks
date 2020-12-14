@@ -27,200 +27,200 @@ Welcome to my Data Center certification testing repository. If you're interested
 ### [350-601 DCCOR] - Implementing and Operating Cisco Data Center Core Technologies (DCCOR)
 
 * Implementing Data Center Switching Protocols
-    + Spanning Tree Protocol
-    + Port Channels Overview
-    + Virtual Port Channels Overview
+- [ ] Spanning Tree Protocol
+- [ ] Port Channels Overview
+- [ ] Virtual Port Channels Overview
 * Implementing First-Hop Redundancy Protocols
-    + Hot Standby Router Protocol (HSRP) Overview
-    + Virtual Router Redundancy Protocol (VRRP) Overview
-    + First Hop Redundancy Protocol (FHRP) for IPv6
-    + Border Gateway Protocol
+- [ ] Hot Standby Router Protocol (HSRP) Overview
+- [ ] Virtual Router Redundancy Protocol (VRRP) Overview
+- [ ] First Hop Redundancy Protocol (FHRP) for IPv6
+- [ ] Border Gateway Protocol
 * Implementing Multicast in Data Center
-    + IP Multicast in Data Center Networks
-    + Internet Group Management Protocol (IGMP) and Multicast Listener Discovery (MLD)
-    + Multicast Distribution Trees and Routing Protocols
-    + IP Multicast on Cisco Nexus Switches
+- [ ] IP Multicast in Data Center Networks
+- [ ] Internet Group Management Protocol (IGMP) and Multicast Listener Discovery (MLD)
+- [ ] Multicast Distribution Trees and Routing Protocols
+- [ ] IP Multicast on Cisco Nexus Switches
 * Implementing Data Center Overlay Protocols
-    + Cisco Overlay Transport Virtualization
-    + Virtual Extensible LAN
+- [ ] Cisco Overlay Transport Virtualization
+- [ ] Virtual Extensible LAN
 * Implementing Network Infrastructure Security
-    + User Accounts and Role Based Access Control (RBAC)
-    + Authentication, Authorization, and Accounting (AAA) and SSH on Cisco NX-OS
-    + Keychain Authentication
-    + First Hop Security
-    + Media Access Control Security
-    + Control Plane Policing
+- [ ] User Accounts and Role Based Access Control (RBAC)
+- [ ] Authentication, Authorization, and Accounting (AAA) and SSH on Cisco NX-OS
+- [ ] Keychain Authentication
+- [ ] First Hop Security
+- [ ] Media Access Control Security
+- [ ] Control Plane Policing
 * Describing Cisco Application-Centric Infrastructure
-    + Cisco ACI Overview, Initialization, and Discovery
-    + Cisco ACI Management
-    + Cisco ACI Fabric Access Policies
+- [ ] Cisco ACI Overview, Initialization, and Discovery
+- [ ] Cisco ACI Management
+- [ ] Cisco ACI Fabric Access Policies
 * Describing Cisco ACI Building Blocks and VMM Domain Integration
-    + Tenant-Based Components
-    + Cisco ACI Endpoints and Endpoint Groups (EPG)
-    + Controlling Traffic Flow with Contracts
-    + Virtual Switches and Cisco ACI VMM Domains
-    + VMM Domain EPG Association
-    + Cisco ACI Integration with Hypervisor Solutions
+- [ ] Tenant-Based Components
+- [ ] Cisco ACI Endpoints and Endpoint Groups (EPG)
+- [ ] Controlling Traffic Flow with Contracts
+- [ ] Virtual Switches and Cisco ACI VMM Domains
+- [ ] VMM Domain EPG Association
+- [ ] Cisco ACI Integration with Hypervisor Solutions
 * Describing Packet Flow in Data Center Network
-    + Data Center Traffic Flows
-    + Packet Flow in Cisco Nexus Switches
-    + Packet Flow in Cisco ACI Fabric
+- [ ] Data Center Traffic Flows
+- [ ] Packet Flow in Cisco Nexus Switches
+- [ ] Packet Flow in Cisco ACI Fabric
 ___
 
 ### [300-610 DCID] Designing Cisco Data Center Infrastructure
 
 * Describing High Availability on Layer 2   
-    + Overview of Layer 2 High-Availability Mechanisms
-    + Virtual Port Channels
-    + Cisco Fabric Path
-    + Virtual Port Channel+
+- [ ] Overview of Layer 2 High-Availability Mechanisms
+- [ ] Virtual Port Channels
+- [ ] Cisco Fabric Path
+- [ ] Virtual Port Channel+
 * Designing Layer 3 Connectivity
-    + First Hop Redundancy Protocols
-    + Improve Routing Protocol Performance and Security
-    + Enhance Layer 3 Scalability and Robustness
+- [ ] First Hop Redundancy Protocols
+- [ ] Improve Routing Protocol Performance and Security
+- [ ] Enhance Layer 3 Scalability and Robustness
 * Designing Data Center Topologies
-    + Data Center Traffic Flows
-    + Cabling Challenges
-    + Access Layer
-    + Aggregation Layer
-    + Core Layer
-    + Spine-and-Leaf Topology
-    + Redundancy Options
+- [ ] Data Center Traffic Flows
+- [ ] Cabling Challenges
+- [ ] Access Layer
+- [ ] Aggregation Layer
+- [ ] Core Layer
+- [ ] Spine-and-Leaf Topology
+- [ ] Redundancy Options
 * Designing Data Center Interconnects with Cisco OTV
-    + Cisco OTV Overview
-    + Cisco OTV Control and Data Planes
-    + Failure Isolation
-    + Cisco OTV Features
-    + Optimize Cisco OTV
-    + Evaluate Cisco OTV
+- [ ] Cisco OTV Overview
+- [ ] Cisco OTV Control and Data Planes
+- [ ] Failure Isolation
+- [ ] Cisco OTV Features
+- [ ] Optimize Cisco OTV
+- [ ] Evaluate Cisco OTV
 * Describing Locator/ID Separation Protocol
-    + Locator/ID Separation Protocol
-    + Location Identifier Separation Protocol (LISP) Virtual Machine (VM) Mobility
-    + LISP Extended Subnet Mode (ESM) Multihop Mobility
-    + LISP VPN Virtualization
+- [ ] Locator/ID Separation Protocol
+- [ ] Location Identifier Separation Protocol (LISP) Virtual Machine (VM) Mobility
+- [ ] LISP Extended Subnet Mode (ESM) Multihop Mobility
+- [ ] LISP VPN Virtualization
 * Describing VXLAN Overlay Networks
-    + Describe VXLAN Benefits over VLAN
-    + Layer 2 and Layer 3 VXLAN Overlay
-    + Multiprotocol Border Gateway Protocol (MP-BGP) Ethernet VPN (EVPN) Control Plane Overview
-    + VXLAN Data Plane
+- [ ] Describe VXLAN Benefits over VLAN
+- [ ] Layer 2 and Layer 3 VXLAN Overlay
+- [ ] Multiprotocol Border Gateway Protocol (MP-BGP) Ethernet VPN (EVPN) Control Plane Overview
+- [ ] VXLAN Data Plane
 * Describing Hardware and Device Virtualization
-    + Hardware-Based High Availability
-    + Device Virtualization
-    + Cisco UCS Hardware Virtualization
-    + Server Virtualization
-    + SAN Virtualization
-    + N-Port ID Virtualization
+- [ ] Hardware-Based High Availability
+- [ ] Device Virtualization
+- [ ] Cisco UCS Hardware Virtualization
+- [ ] Server Virtualization
+- [ ] SAN Virtualization
+- [ ] N-Port ID Virtualization
 * Describing Cisco FEX Options
-    + Cisco Adapter FEX
-    + Access Layer with Cisco FEX
-    + Cisco FEX Topologies
-    + Virtualization-Aware Networking
-    + Single Root I/O Virtualization
-    + Cisco FEX Evaluation
+- [ ] Cisco Adapter FEX
+- [ ] Access Layer with Cisco FEX
+- [ ] Cisco FEX Topologies
+- [ ] Virtualization-Aware Networking
+- [ ] Single Root I/O Virtualization
+- [ ] Cisco FEX Evaluation
 * Describing Basic Data Center Security
-    + Threat Mitigation
-    + Attack and Countermeasure Examples
-    + Secure the Management Plane
-    + Protect the Control Plane
-    + RBAC and Authentication, Authorization, and Accounting (AAA)
+- [ ] Threat Mitigation
+- [ ] Attack and Countermeasure Examples
+- [ ] Secure the Management Plane
+- [ ] Protect the Control Plane
+- [ ] RBAC and Authentication, Authorization, and Accounting (AAA)
 * Describing Advanced Data Center Security
-    + Cisco TrustSec in Cisco Secure Enclaves Architecture
-    + Cisco TrustSec Operation
-    + Firewalling
-    + Positioning the Firewall Within Data Center Networks
-    + Cisco Firepower® Portfolio
-    + Firewall Virtualization
-    + Design for Threat Mitigation
+- [ ] Cisco TrustSec in Cisco Secure Enclaves Architecture
+- [ ] Cisco TrustSec Operation
+- [ ] Firewalling
+- [ ] Positioning the Firewall Within Data Center Networks
+- [ ] Cisco Firepower® Portfolio
+- [ ] Firewall Virtualization
+- [ ] Design for Threat Mitigation
 * Describing Management and Orchestration
-    + Network and License Management
-    + Cisco UCS Manager
-    + Cisco UCS Director
-    + Cisco Intersight
-    + Cisco DCNM Overview
+- [ ] Network and License Management
+- [ ] Cisco UCS Manager
+- [ ] Cisco UCS Director
+- [ ] Cisco Intersight
+- [ ] Cisco DCNM Overview
 * Describing Storage and RAID Options
-    + Position DAS in Storage Technologies
-    + Network-Attached Storage
-    + Fibre Channel, FCoE, and Internet Small Computer System Interface (iSCSI)
-    + Evaluate Storage Technologies
+- [ ] Position DAS in Storage Technologies
+- [ ] Network-Attached Storage
+- [ ] Fibre Channel, FCoE, and Internet Small Computer System Interface (iSCSI)
+- [ ] Evaluate Storage Technologies
 * Describing Fibre Channel Concepts
-    + Fibre Channel Connections, Layers, and Addresses
-    + Fibre Channel Communication
-    + Virtualization in Fibre Channel SAN
+- [ ] Fibre Channel Connections, Layers, and Addresses
+- [ ] Fibre Channel Communication
+- [ ] Virtualization in Fibre Channel SAN
 * Describing Fibre Channel Topologies
-    + SAN Parameterization
-    + SAN Design Options
-    + Choosing a Fibre Channel Design Solution
+- [ ] SAN Parameterization
+- [ ] SAN Design Options
+- [ ] Choosing a Fibre Channel Design Solution
 * Describing FCoE
-    + FCoE Protocol Characteristics
-    + FCoE Communication
-    + Data Center Bridging
-    + FCoE Initialization Protocol
-    + FCoE Design Options
+- [ ] FCoE Protocol Characteristics
+- [ ] FCoE Communication
+- [ ] Data Center Bridging
+- [ ] FCoE Initialization Protocol
+- [ ] FCoE Design Options
 * Describing Storage Security
-    + Common SAN Security Features
-    + Zones
-    + SAN Security Enhancements
-    + Cryptography in SAN
+- [ ] Common SAN Security Features
+- [ ] Zones
+- [ ] SAN Security Enhancements
+- [ ] Cryptography in SAN
 * Describing SAN Management and Orchestration
-    + Cisco DCNM for SAN
-    + Cisco DCNM Analytics and Streaming Telemetry
-    + Cisco UCS Director in the SAN
-    + Cisco UCS Director Workflows
+- [ ] Cisco DCNM for SAN
+- [ ] Cisco DCNM Analytics and Streaming Telemetry
+- [ ] Cisco UCS Director in the SAN
+- [ ] Cisco UCS Director Workflows
 * Describing Cisco UCS Servers and Use Cases
-    + Cisco UCS C-Series Servers
-    + Fabric Interconnects and Blade Chassis
-    + Cisco UCS B-Series Server Adapter Cards
-    + Stateless Computing
-    + Cisco UCS Mini
+- [ ] Cisco UCS C-Series Servers
+- [ ] Fabric Interconnects and Blade Chassis
+- [ ] Cisco UCS B-Series Server Adapter Cards
+- [ ] Stateless Computing
+- [ ] Cisco UCS Mini
 * Describing Fabric Interconnect Connectivity
-    + Use of Fabric Interconnect Interfaces
-    + VLANs and VSANs in a Cisco UCS Domain
-    + Southbound Connections
-    + Northbound Connections
-    + Disjoint Layer 2 Networks
-    + Fabric Interconnect High Availability and Redundancy
+- [ ] Use of Fabric Interconnect Interfaces
+- [ ] VLANs and VSANs in a Cisco UCS Domain
+- [ ] Southbound Connections
+- [ ] Northbound Connections
+- [ ] Disjoint Layer 2 Networks
+- [ ] Fabric Interconnect High Availability and Redundancy
 * Describing Hyper converged and Integrated Systems
-    + Hyper converged and Integrated Systems Overview
-    + Cisco HyperFlex™ Solution
-    + Cisco HyperFlex Scalability and Robustness
-    + Cisco HyperFlex Clusters
-    + Cluster Capacity and Multiple Clusters on One Cisco UCS Domain
-    + External Storage and Graphical Processing Units on Cisco HyperFlex
-    + Cisco HyperFlex Positioning
+- [ ] Hyper converged and Integrated Systems Overview
+- [ ] Cisco HyperFlex™ Solution
+- [ ] Cisco HyperFlex Scalability and Robustness
+- [ ] Cisco HyperFlex Clusters
+- [ ] Cluster Capacity and Multiple Clusters on One Cisco UCS Domain
+- [ ] External Storage and Graphical Processing Units on Cisco HyperFlex
+- [ ] Cisco HyperFlex Positioning
 * Describing Cisco UCS Manager System wide Parameters
-    + Cisco UCS Setup and Management
-    + Cisco UCS Traffic Management
+- [ ] Cisco UCS Setup and Management
+- [ ] Cisco UCS Traffic Management
 * Describing Cisco UCS RBAC
-    + Roles and Privileges
-    + Organizations in Cisco UCS Manager
-    + Locales and Effective Rights
-    + Authentication, Authorization, and Accounting
-    + Two-Factor Authentication
+- [ ] Roles and Privileges
+- [ ] Organizations in Cisco UCS Manager
+- [ ] Locales and Effective Rights
+- [ ] Authentication, Authorization, and Accounting
+- [ ] Two-Factor Authentication
 * Describing Pools for Service Profiles
-    + Global and Local Pools
-    + Universally Unique Identifier (UUID) Suffix and Media Access Control (MAC) Address Pools
-    + World Wide Name (WWN) Pools
-    + Server and iSCSI Initiator IP Pools
+- [ ] Global and Local Pools
+- [ ] Universally Unique Identifier (UUID) Suffix and Media Access Control (MAC) Address Pools
+- [ ] World Wide Name (WWN) Pools
+- [ ] Server and iSCSI Initiator IP Pools
 * Describing Policies for Service Profiles
-    + Global vs. Local Policies
-    + Storage and Basic Input/Output System (BIOS) Policies
-    + Boot and Scrub Policies
-    + Intelligent Platform Management Interface (IPMI) and Maintenance Policies
+- [ ] Global vs. Local Policies
+- [ ] Storage and Basic Input/Output System (BIOS) Policies
+- [ ] Boot and Scrub Policies
+- [ ] Intelligent Platform Management Interface (IPMI) and Maintenance Policies
 * Describing Network-Specific Adapters and Policies
-    + LAN Connectivity Controls
-    + SAN Connectivity Controls
-    + Virtual Access Layer
-    + Connectivity Enhancements
+- [ ] LAN Connectivity Controls
+- [ ] SAN Connectivity Controls
+- [ ] Virtual Access Layer
+- [ ] Connectivity Enhancements
 * Describing Templates in Cisco UCS Manager
-    + Cisco UCS Templates
-    + Service Profile Templates
-    + Network Templates
+- [ ] Cisco UCS Templates
+- [ ] Service Profile Templates
+- [ ] Network Templates
 * Designing Data Center Automation
-    + Model-Driven Programmability
-    + Cisco NX-API Overview
-    + Programmability Using Python
-    + Cisco Ansible Module
-    + Use the Puppet Agent
+- [ ] Model-Driven Programmability
+- [ ] Cisco NX-API Overview
+- [ ] Programmability Using Python
+- [ ] Cisco Ansible Module
+- [ ] Use the Puppet Agent
 
 #### Lab Outline
 
