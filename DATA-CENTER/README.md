@@ -8,6 +8,21 @@ Welcome to my Data Center certification testing repository. If you're interested
 * CCIE Data Center
 * Data Center Specialist
 
+## CCNA Data Center
+
+### 200-150 DCICN Exam
+
+## During this course:
+
+* Describe and identify data center network protocols and host-to-host communication
+* Basic data center concepts using NX-OS
+* Advanced data center netowrking concepts
+     * Multilayer switching
+     * Basic configurations
+* Describe and compare basic data center storage options
+* Describe the Fibre Channel name server and febric login (FLOGI) process
+* Identify the components of Cisco Unified Computing System (Cisco UCS) architecture and use the Cisco UCS Manager GUI
+
 ## CCNP Data Center
 
 ### Core Exam
@@ -18,7 +33,7 @@ Welcome to my Data Center certification testing repository. If you're interested
 
 * [300-610 DCID] Designing Cisco Data Center Infrastructure
 * [300-615 DCIT] Troubleshooting Cisco Data Center Instructure
-* [300-210 DCACI] Implementing Cisco Application Centric Infrastructure(DCACI)
+* [300-620 DCACI] Implementing Cisco Application Centric Infrastructure(DCACI)
 * [300-625 DCSAN] Configuring Cisco MDS 9000 Series Switches (DCMDS)
 * [300-635 DCAUTO] Implementing Automations for Cisco Data Center Solutions (DCAUI)
 
@@ -487,7 +502,7 @@ ___
 ## Cisco Data Center Specialist Exams
 
 * [350-601 DCCOR]Cisco Certified Specialist - Data Center Core 	
-* [300-615 DCIT] Cisco Certified Specialist - Data Center Operations 	
+* [300-615 DCIT] Cisco Certified Specialist - Data Center Operations 
 * [300-620 DCACI]Cisco Certified Specialist - Data Center ACI Implementation 	
 * [300-625 DCSAN] Cisco Certified Specialist - Data Center SAN Implementation 	
 * [300-635 DCAUTO] Cisco Certified DevNet Specialist - Data Center Automation and Programmability 	
